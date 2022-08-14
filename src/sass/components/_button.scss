@@ -1,0 +1,16 @@
+.btn {
+  background: transparent;
+  padding: 1rem 1.5rem;
+
+  &__primary {
+
+    &:hover,
+    &:active {
+      // 
+    }
+
+    &:focus {
+      // 
+    }
+  }
+}
