@@ -1,27 +1,39 @@
 // Breakpoints
 $bp-xsmall: 28.125em; // 450px;
 $bp-small: 48em; // 768px;
-// $bp-menu: 59.6875em; // 955px;
-// $bp-menu: 65.375em; // 1046px;
-$bp-menu: 70.5625em; // 1129px;
 $bp-medium: 64em; // 1024px;
 $bp-large: 85.375em; // 1366px;
 $bp-xlarge: 120em; // 1920px;
-$bp-xxlarge: 160em; // 2560px;
 
 // Media Queries
 $mq-xsmall: "screen and (min-width: #{$bp-xsmall})";
 $mq-small: "screen and (min-width: #{$bp-small})";
-$mq-menu: "screen and (min-width: #{$bp-menu})";
 $mq-medium: "screen and (min-width: #{$bp-medium})";
 $mq-large: "screen and (min-width: #{$bp-large})";
 $mq-xlarge: "screen and (min-width: #{$bp-xlarge})";
-$mq-xxlarge: "screen and (min-width: #{$bp-xxlarge})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
-$mq-ie: "all and (-ms-high-contrast: none), (-ms-high-contrast: active)";
 
-
+// Root variables
+// https://www.schemecolor.com/dark-sea.php
 :root {
+  --darkest-blue: #071932;
+  --dark-blue: #082540;
+  --dark-blue-green: #023C4D;
+  --dark-green: #0D4848;
+  --darkest-green: #032D39;
+
+  --white: #f1f1f1;
+  --black: #333;
+
   --ff-sans: "Roboto", sans-serif;
   --ff-mono: "Robot Mono", monospace;
+
+  --fs-xxs: 1.2rem;
+  --fs-xs: 1.3rem;
+  --fs-sm: 1.4rem;
+  --fs-md: 1.6rem;
+  --fs-lg: 1.8rem;
+  --fs-xl: 2rem;
+  --fs-xxl: 2.2rem;
+  --fs-heading: 6rem;
 }
