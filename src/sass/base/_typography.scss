@@ -9,3 +9,34 @@ body {
   font-family: var(--ff-sans);
   font-size: var(--fs-md);
 }
+
+a {
+  color: $clr-light-blue-green;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+article {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+section {
+
+  h2 {
+    display: inline-block;
+    width: auto;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    border-bottom: 5px solid $clr-green;
+
+    span {
+      font-size: 60%;
+      font-weight: 300;
+    }
+  }
+}
