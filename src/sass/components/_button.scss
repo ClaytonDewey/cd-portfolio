@@ -1,16 +1,46 @@
 .btn {
-  background: transparent;
+  display: inline-block;
   padding: 1rem 1.5rem;
+  font-family: var(--ff-mono);
+  font-size: var(--fs-sm);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: transparent;
+  color: inherit;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
   &__primary {
+    border-color: $clr-green;
+    color: $clr-green;
 
     &:hover,
     &:active {
-      // 
+      background-color: $clr-green;
+      border-color: $clr-green;
+      color: $clr-white
     }
 
     &:focus {
       // 
     }
   }
+
+  &__secondary {
+    border-color: $clr-light-blue-green;
+    color: $clr-light-blue-green;
+
+    &:hover,
+    &:active {
+      background-color: $clr-light-blue-green;
+      color: $clr-white;
+    }
+  }
+
 }
