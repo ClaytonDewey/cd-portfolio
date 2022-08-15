@@ -16,16 +16,6 @@ $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 // Root variables
 // https://www.schemecolor.com/dark-sea.php
 :root {
-  --darkest-blue: #071932;
-  --dark-blue: #082540;
-  --dark-blue-green: #023C4D;
-  --light-blue-green: #46a6b9;
-  --green: #167979;
-  --dark-green: #0D4848;
-  --darkest-green: #032D39;
-
-  --white: #f1f1f1;
-  --black: #333;
 
   --ff-sans: "Roboto", sans-serif;
   --ff-mono: "Robot Mono", monospace;
@@ -39,3 +29,18 @@ $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
   --fs-xxl: 2.2rem;
   --fs-heading: 6rem;
 }
+
+$clr-darkest-blue: #071932;
+$clr-dark-blue: #082540;
+$clr-dark-blue-green: #023C4D;
+$clr-light-blue-green: #46a6b9;
+$clr-green: #167979;
+$clr-dark-green: #0D4848;
+$clr-darkest-green: #032D39;
+$clr-darkest-gray: #8d9497;
+$clr-dark-gray: #a7afb1;
+$clr-gray: #d4d4cf;
+$clr-blue-gray: #6d8190;
+
+$clr-white: #f1f1f1;
+$clr-black: #333;
