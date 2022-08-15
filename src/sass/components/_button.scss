@@ -1,8 +1,8 @@
 .btn {
   display: inline-block;
   padding: 1rem 1.5rem;
-  font-family: var(--ff-mono);
-  font-size: var(--fs-sm);
+  font-family: $ff-mono;
+  font-size: $fs-sm;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -17,6 +17,17 @@
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
   &__primary {
+    border-color: $clr-light-blue-green;
+    color: $clr-light-blue-green;
+
+    &:hover,
+    &:active {
+      background-color: $clr-light-blue-green;
+      color: $clr-white;
+    }
+  }
+
+  &__secondary {
     border-color: $clr-green;
     color: $clr-green;
 
@@ -31,16 +42,4 @@
       // 
     }
   }
-
-  &__secondary {
-    border-color: $clr-light-blue-green;
-    color: $clr-light-blue-green;
-
-    &:hover,
-    &:active {
-      background-color: $clr-light-blue-green;
-      color: $clr-white;
-    }
-  }
-
 }

@@ -15,20 +15,21 @@ $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 
 // Root variables
 // https://www.schemecolor.com/dark-sea.php
-:root {
+$ff-sans: "Roboto", sans-serif;
+$ff-mono: "Robot Mono", monospace;
 
-  --ff-sans: "Roboto", sans-serif;
-  --ff-mono: "Robot Mono", monospace;
+$fs-xxs: 1.2rem;
+$fs-xs: 1.3rem;
+$fs-sm: 1.4rem;
+$fs-md: 1.6rem;
+$fs-lg: 1.8rem;
+$fs-xl: 2rem;
+$fs-xxl: 2.2rem;
+$fs-heading: 6rem;
 
-  --fs-xxs: 1.2rem;
-  --fs-xs: 1.3rem;
-  --fs-sm: 1.4rem;
-  --fs-md: 1.6rem;
-  --fs-lg: 1.8rem;
-  --fs-xl: 2rem;
-  --fs-xxl: 2.2rem;
-  --fs-heading: 6rem;
-}
+$fw-bold: 700;
+$fw-regular: 400;
+$fw-light: 300;
 
 $clr-darkest-blue: #071932;
 $clr-dark-blue: #082540;
