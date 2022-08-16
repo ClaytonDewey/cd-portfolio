@@ -1,20 +1,57 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
-    <nav class="nav__primary">
+    <nav className="nav__primary">
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <Link
+            activeClass="active"
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Portfolio
+          </Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>
