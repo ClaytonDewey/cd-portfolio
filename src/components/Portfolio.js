@@ -23,7 +23,7 @@ const Portfolio = ({ projects }) => {
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    <img src={`/content/projects/${image}`} alt="" />
+                    <img src={`content/projects/${image}`} alt="" />
                   </a>
                 </div>
                 <div className="project__header">
