@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import Nav from "./Nav";
 
 const Header = () => {
@@ -20,9 +21,16 @@ const Header = () => {
             </p>
           </div>
 
-          <a href="#about" className="scroll-down">
+          <Link
+            className="scroll-down"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             <div className="visually-hidden">About Me</div>
-          </a>
+          </Link>
         </div>
       </header>
     </>
