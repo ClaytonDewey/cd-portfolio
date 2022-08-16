@@ -62,26 +62,45 @@
   margin-block: 2rem;
 }
 
+#portfolio {
+  .flex {
+    justify-content: space-evenly;
+  }
+}
+
 .project {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  margin-inline: auto;
+  background: $clr-dark-blue;
+  margin-bottom: 3rem;
+  position: relative;
 
   &__image {
-    margin: 3rem auto;
-    text-align: center;
-
     img {
       display: block;
-      max-width: 100%;
+      max-width: 75%;
       height: auto;
+      margin: 3rem auto;
     }
   }
 
+  &__header {
+    text-align: center;
+  }
+
   &__content {
-    background: rgba($clr-dark-blue-green, .95);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     padding: 2rem;
-    margin: auto;
+    background: darken($clr-dark-blue, 5%);
+    transition: all .45s ease-in-out;
 
     a {
       display: inline-block;
@@ -89,17 +108,14 @@
     }
   }
 
-  &__title {
-    font-size: $fs-xxl;
-    color: darken($clr-white, 10%);
-    margin-bottom: 5px;
-  }
-
-  &__type {
-    font-size: $fs-md;
-    font-weight: $fw-light;
-    letter-spacing: 1.5px;
-    margin-bottom: 1.5rem;
+  &:hover {
+    .project__content {
+      display: flex;
+      visibility: visible;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 1;
+    }
   }
 
   &__tools {
@@ -107,63 +123,20 @@
 
     li {
       display: inline-block;
-      letter-spacing: 1px;
-      font-family: $ff-mono;
 
       &:not(:last-child) {
-        margin-right: 1rem;
+        margin-right: 1.5rem;
+        font-family: $ff-mono;
+        letter-spacing: 1.5px;
       }
     }
-  }
-
-  &:not(:last-child) {
-    padding-bottom: 3rem;
-    border-bottom: 1px solid $clr-dark-blue;
   }
 
   @media #{$mq-small} {
-    position: relative;
-    flex-flow: row wrap;
-
-    &:nth-child(even) {
-      .project__content {
-        right: initial;
-        left: 0;
-      }
-    }
-
-    &__image {
-      flex: 0 0 50%;
-      margin: 3rem 0;
-    }
-
-    &__content {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      width: 45rem;
-      border-radius: 5px;
-      border:1px solid $clr-dark-blue;
-
-    }
+    flex: 0 0 45%;
   }
 
   @media #{$mq-medium} {
-
-    &__image {
-      flex: 0 0 60%;
-    }
-
-    &__content {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      width: 60rem;
-      border-radius: 5px;
-      border:1px solid $clr-dark-blue;
-    }
+    flex: 0 0 31%;
   }
-
 }
