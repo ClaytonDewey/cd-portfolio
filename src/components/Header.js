@@ -6,7 +6,7 @@ const Header = () => {
       <div className="header__wrapper">
         <div className="page-header">
           <img
-            src="/img/profile.jpeg"
+            src="img/profile.jpeg"
             className="header__image-profile"
             alt=""
           />
