@@ -4,6 +4,13 @@ import { Link } from "react-scroll";
 const Nav = () => {
   return (
     <nav className="nav__primary">
+      {/* <button className="nav__toggler">
+        <span className="icon__bar top__bar"></span>
+        <span className="icon__bar top__bar"></span>
+        <span className="icon__bar top__bar"></span>
+        <span className="visually-hidden">Toggle navigation</span>
+      </button> */}
+
       <ul>
         <li>
           <Link

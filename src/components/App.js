@@ -10,8 +10,16 @@ const App = () => {
   const { projects } = Data;
   return (
     <>
+      {/* <div class="backtotop">
+        <a href="/" title="Back to top">
+          <em className="fas fa-chevron-up" aria-hidden="true"></em>
+        </a>
+      </div>
+      <a href="#main" class="skipLink">
+        Skip to Content
+      </a> */}
       <Header />
-      <main className="container">
+      <main id="main" className="container">
         <About title="about" />
         <Portfolio title="portfolio" projects={projects} />
         <Contact title="contact" />
