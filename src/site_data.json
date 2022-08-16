@@ -13,7 +13,7 @@
       "id": 2,
       "title": "UW Alumni Store",
       "type": "E-Commerce Site",
-      "image": "uwalumnistore/alumnistore-comp.png",
+      "image": "uwalumnistore/alumniStore-comp.png",
       "external": "https://www.uwalumnistore.com/",
       "tools": ["HTML5", "CSS/Sass", "JavaScript/jQuery"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat accusamus cum quia ratione, hic, dignissimos adipisci molestias excepturi quam asperiores enim culpa rerum debitis voluptates recusandae? Consequuntur illum commodi quidem."
