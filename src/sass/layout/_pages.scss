@@ -116,12 +116,39 @@
     border-bottom: 1px solid $clr-dark-blue;
   }
 
-  @media #{$mq-medium} {
+  @media #{$mq-small} {
     position: relative;
     flex-flow: row wrap;
 
+    &:nth-child(odd) {
+      .project__content {
+        right: initial;
+        left: 0;
+      }
+    }
+
     &__image {
-      flex: 1 0 75%;
+      flex: 0 0 65%;
+      margin: 3rem 0;
+    }
+
+    &__content {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 45rem;
+      border-radius: 5px;
+      border:1px solid $clr-dark-blue;
+
+    }
+  }
+
+  @media #{$mq-medium} {
+
+    &__image {
+      flex: 0 0 75%;
+      margin-inline: auto;
     }
 
     &__content {
@@ -134,4 +161,5 @@
       border:1px solid $clr-dark-blue;
     }
   }
+
 }
