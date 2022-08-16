@@ -12,9 +12,9 @@ const App = () => {
     <>
       <Header />
       <main className="container">
-        <About />
-        <Portfolio projects={projects} />
-        <Contact />
+        <About title="about" />
+        <Portfolio title="portfolio" projects={projects} />
+        <Contact title="contact" />
       </main>
       <Footer />
     </>
