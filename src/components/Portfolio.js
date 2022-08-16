@@ -12,10 +12,17 @@ const Portfolio = () => {
       <div className="flex flex__row-wrap">
         <div className="project">
           <div className="project__image">
-            <img
-              src="/content/projects/uwbookstore/bookstore-comp.png"
-              alt=""
-            />
+            <a
+              href="/"
+              aria-label="External Link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="/content/projects/uwbookstore/bookstore-comp.png"
+                alt=""
+              />
+            </a>
           </div>
 
           <div className="project__content">
@@ -27,6 +34,15 @@ const Portfolio = () => {
               excepturi quam asperiores enim culpa rerum debitis voluptates
               recusandae? Consequuntur illum commodi quidem.
             </p>
+            <a
+              href="/"
+              aria-label="External Link"
+              className="external"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              View Site
+            </a>
             <ul className="project__tools">
               <li>HTML</li>
               <li>CSS/Sass</li>

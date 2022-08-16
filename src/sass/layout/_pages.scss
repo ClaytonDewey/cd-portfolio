@@ -82,6 +82,11 @@
     background: rgba($clr-dark-blue-green, .95);
     padding: 2rem;
     margin: auto;
+
+    a {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
   }
 
   &__title {
@@ -120,7 +125,7 @@
     position: relative;
     flex-flow: row wrap;
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       .project__content {
         right: initial;
         left: 0;
@@ -128,7 +133,7 @@
     }
 
     &__image {
-      flex: 0 0 65%;
+      flex: 0 0 50%;
       margin: 3rem 0;
     }
 
@@ -147,8 +152,7 @@
   @media #{$mq-medium} {
 
     &__image {
-      flex: 0 0 75%;
-      margin-inline: auto;
+      flex: 0 0 60%;
     }
 
     &__content {
