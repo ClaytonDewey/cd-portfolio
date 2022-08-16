@@ -4,14 +4,16 @@ import About from "./About";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Data from "../site_data.json";
 
 const App = () => {
+  const { projects } = Data;
   return (
     <>
       <Header />
       <main className="container">
         <About />
-        <Portfolio />
+        <Portfolio projects={projects} />
         <Contact />
       </main>
       <Footer />
