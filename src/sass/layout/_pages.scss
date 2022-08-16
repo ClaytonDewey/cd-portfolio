@@ -77,6 +77,16 @@
   &__body {
     background: $clr-dark-blue;
     padding: 2rem;
+
+    &:hover {
+      .project__content {
+        display: flex;
+        visibility: visible;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 1;
+      }
+    }
   }
 
   &__image {
@@ -110,15 +120,6 @@
     }
   }
 
-  &:hover {
-    .project__content {
-      display: flex;
-      visibility: visible;
-      flex-direction: column;
-      justify-content: center;
-      opacity: 1;
-    }
-  }
 
   &__tools {
     list-style-type: none;
