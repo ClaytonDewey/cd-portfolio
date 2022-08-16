@@ -64,7 +64,7 @@
 
 #portfolio {
   .flex {
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
 
@@ -72,10 +72,12 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  margin-inline: auto;
-  background: $clr-dark-blue;
-  margin-bottom: 3rem;
   position: relative;
+  
+  &__body {
+    background: $clr-dark-blue;
+    padding: 2rem;
+  }
 
   &__image {
     img {
@@ -94,10 +96,10 @@
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 2rem;
+    left: 2rem;
+    bottom: 2rem;
+    right: 2rem;
     padding: 2rem;
     background: darken($clr-dark-blue, 5%);
     transition: all .45s ease-in-out;
@@ -133,10 +135,10 @@
   }
 
   @media #{$mq-small} {
-    flex: 0 0 45%;
+    flex: 0 0 50%;
   }
 
   @media #{$mq-medium} {
-    flex: 0 0 31%;
+    flex: 0 0 33.333%;
   }
 }
