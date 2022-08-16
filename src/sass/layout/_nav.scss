@@ -27,6 +27,12 @@
           padding: 1.5rem;
           text-decoration: none;
           color: $clr-white;
+          cursor: pointer;
+
+          &.active {
+            color: green;
+            border-bottom: 1px solid green;
+          }
         }
       }
     }
