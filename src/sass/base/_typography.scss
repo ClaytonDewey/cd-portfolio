@@ -24,9 +24,9 @@ article {
   padding: 0 2rem;
 }
 
-section {
+.section {
 
-  h2 {
+  &__title {
     display: inline-block;
     width: auto;
     padding-bottom: 2rem;
