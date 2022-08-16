@@ -1,0 +1,34 @@
+.nav {
+
+  &__primary {
+    background: $clr-dark-blue;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-bottom: 1px solid $clr-dark-blue-green;
+
+    ul {
+      list-style-type: none;
+      width: auto;
+      margin: 0 auto;
+
+      li {
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+
+        a {
+          display: block;
+          padding: 1.5rem;
+          text-decoration: none;
+          color: $clr-white;
+        }
+      }
+    }
+  }
+}
