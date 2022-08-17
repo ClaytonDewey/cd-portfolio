@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Loader from "./Loader";
 import Header from "./Header";
 import About from "./About";
 import Portfolio from "./Portfolio";
@@ -8,23 +9,27 @@ import Data from "../site_data.json";
 
 const App = () => {
   const { projects } = Data;
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000);
+  }, []);
+
   return (
     <>
-      {/* <div class="backtotop">
-        <a href="/" title="Back to top">
-          <em className="fas fa-chevron-up" aria-hidden="true"></em>
-        </a>
-      </div>
-      <a href="#main" class="skipLink">
-        Skip to Content
-      </a> */}
-      <Header />
-      <main id="main" className="container">
-        <About title="about" />
-        <Portfolio title="portfolio" projects={projects} />
-        <Contact title="contact" />
-      </main>
-      <Footer />
+      {!loading ? (
+        <>
+          <Header />
+          <main id="main" className="container">
+            <About title="about" />
+            <Portfolio title="portfolio" projects={projects} />
+            <Contact title="contact" />
+          </main>
+          <Footer />
+        </>
+      ) : (
+        <Loader />
+      )}
     </>
   );
 };
