@@ -1,19 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [scroll, setScroll] = useState(false);
+  const [scrollNav, setScrollNav] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 50);
+      setScrollNav(window.scrollY > 50);
     });
   }, []);
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
 
   return (
     <nav
       className={`nav__primary ${isNavOpen ? "open" : ""} ${
-        scroll ? "bg-dark" : ""
+        scrollNav ? "bg-dark" : ""
       }`}
     >
       <button onClick={() => setIsNavOpen(!isNavOpen)} className="nav__toggler">
@@ -32,7 +36,10 @@ const Nav = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            onClick={() => setIsNavOpen(false)}
+            onClick={() => {
+              setIsNavOpen(false);
+              scrollToTop();
+            }}
           >
             Home
           </Link>
