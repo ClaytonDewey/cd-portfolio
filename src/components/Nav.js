@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  }, []);
 
   return (
-    <nav className={`nav__primary ${isNavOpen ? "open" : ""}`}>
+    <nav
+      className={`nav__primary ${isNavOpen ? "open" : ""} ${
+        scroll ? "bg-dark" : ""
+      }`}
+    >
       <button onClick={() => setIsNavOpen(!isNavOpen)} className="nav__toggler">
         <span className="icon__bar top__bar"></span>
         <span className="icon__bar top__bar"></span>
@@ -22,6 +32,7 @@ const Nav = () => {
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={() => setIsNavOpen(false)}
           >
             Home
           </Link>
@@ -34,6 +45,7 @@ const Nav = () => {
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={() => setIsNavOpen(false)}
           >
             About
           </Link>
@@ -46,6 +58,7 @@ const Nav = () => {
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={() => setIsNavOpen(false)}
           >
             Portfolio
           </Link>
@@ -58,6 +71,7 @@ const Nav = () => {
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={() => setIsNavOpen(false)}
           >
             Contact
           </Link>

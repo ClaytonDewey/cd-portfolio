@@ -4,10 +4,10 @@
     position: absolute;
     cursor: pointer;
     left: 1rem;
-    top: 1rem;
+    top: 5px;
     font-size: 2rem;
     line-height: 1;
-    background-color: #b7a85c;
+    background-color: transparent;
     border: none;
     z-index: 200;
     padding: 1.5rem;
@@ -38,7 +38,7 @@
     }
 
     &:hover {
-      background-color: #766a2d;
+      // background-color: lighten($clr-dark-blue-green, 5%);
       .icon {
         &__bar {
           &:nth-child(2) {
@@ -50,15 +50,12 @@
   }
 
   &__primary {
-    background: $clr-dark-blue;
-    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    border-bottom: 1px solid $clr-dark-blue-green;
-    height: 7rem;
+    height: 5rem;
 
     ul {
       display: none;
@@ -74,7 +71,7 @@
         }
 
         a {
-          display: block;
+          display: inline-block;
           padding: 1.5rem;
           text-decoration: none;
           color: $clr-white;
@@ -89,9 +86,20 @@
       }
     }
 
+    &.bg-dark {
+      background: $clr-dark-blue;
+      border-bottom: 1px solid $clr-dark-blue-green;
+    }
+
     &.open {
       ul {
         display: block;
+        background: $clr-dark-blue;
+        padding-top: 5rem;
+
+        li {
+          display: block;
+        }
       }
       .icon {
         &__bar {
@@ -118,7 +126,9 @@
     }
 
     &__primary {
+      text-align: center;
       height: auto;
+
       ul {
         display: block;
       }
