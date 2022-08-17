@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
 
-const Nav = () => {
+const Nav = ({ Link }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
   useEffect(() => {
@@ -9,10 +8,6 @@ const Nav = () => {
       setScrollNav(window.scrollY > 50);
     });
   }, []);
-
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
 
   return (
     <nav
@@ -38,7 +33,6 @@ const Nav = () => {
             duration={500}
             onClick={() => {
               setIsNavOpen(false);
-              scrollToTop();
             }}
           >
             Home

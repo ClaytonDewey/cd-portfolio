@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-scroll";
 import Nav from "./Nav";
 
-const Header = () => {
+const Header = ({ Link }) => {
   return (
-    <>
-      <Nav />
+    <div id="home">
+      <Nav Link={Link} />
       <header className="header__index">
         <div className="header__wrapper">
           <div className="page-header">
@@ -33,7 +33,7 @@ const Header = () => {
           </Link>
         </div>
       </header>
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const About = ({ Link }) => {
   return (
     <section id="about">
       <h2 className="section__title">
@@ -31,9 +31,17 @@ const About = () => {
           </p>
 
           <div className="flex btn__container">
-            <a href="#contact" className="btn btn__primary">
+            <Link
+              className="btn btn__primary"
+              activeClass=""
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               Get In Touch
-            </a>
+            </Link>
             <a
               href="./files/Resume-Clayton_Dewey.pdf"
               target="_blank"

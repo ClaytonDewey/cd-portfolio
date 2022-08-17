@@ -6,6 +6,7 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Data from "../site_data.json";
+import { Link } from "react-scroll";
 
 const App = () => {
   const { projects } = Data;
@@ -19,9 +20,9 @@ const App = () => {
     <>
       {!loading ? (
         <>
-          <Header />
+          <Header Link={Link} title="home" />
           <main id="main" className="container">
-            <About title="about" />
+            <About Link={Link} title="about" />
             <Portfolio title="portfolio" projects={projects} />
             <Contact title="contact" />
           </main>
