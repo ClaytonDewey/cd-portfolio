@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 
 const Nav = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
   return (
-    <nav className="nav__primary">
-      {/* <button className="nav__toggler">
+    <nav className={`nav__primary ${isNavOpen ? "open" : ""}`}>
+      <button onClick={() => setIsNavOpen(!isNavOpen)} className="nav__toggler">
         <span className="icon__bar top__bar"></span>
         <span className="icon__bar top__bar"></span>
         <span className="icon__bar top__bar"></span>
         <span className="visually-hidden">Toggle navigation</span>
-      </button> */}
+      </button>
 
       <ul>
         <li>
