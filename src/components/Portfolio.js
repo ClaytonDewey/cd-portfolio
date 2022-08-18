@@ -41,6 +41,7 @@ const Portfolio = ({ projects }) => {
                   >
                     View Site
                   </a>
+                  <p className="m-0">Tools used:</p>
                   <ul className="project__tools">
                     {tools.map((tool) => {
                       return <li key={tool}>{tool}</li>;
