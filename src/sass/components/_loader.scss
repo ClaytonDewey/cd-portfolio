@@ -149,3 +149,26 @@
 .no-js h1 {
   color: #222222; }
 
+.loader__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#loader-wrapper {
+  span {
+    border: 10px solid $clr-green;
+    margin: 10px;
+    display: block;
+    border-radius: 100%;
+    border-top-color: $clr-darkest-blue;
+    border-right-color: $clr-darkest-blue;
+    animation: dreh 4s infinite cubic-bezier(.56,-0.24,.41,1.23);
+  }
+}
+
+@keyframes dreh {
+  100%
+    {transform: rotate(360deg)}
+}
