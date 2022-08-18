@@ -7,7 +7,7 @@
       "image": "uwbookstore/bookstore-comp.png",
       "external": "https://www.uwbookstore.com/",
       "tools": ["HTML5", "CSS/Sass", "JavaScript/jQuery"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat accusamus cum quia ratione, hic, dignissimos adipisci molestias excepturi quam asperiores enim culpa rerum debitis voluptates recusandae? Consequuntur illum commodi quidem."
+      "description": "E-commerce site developed for the University Book Store."
     },
     {
       "id": 2,
@@ -16,16 +16,16 @@
       "image": "uwalumnistore/alumniStore-comp.png",
       "external": "https://www.uwalumnistore.com/",
       "tools": ["HTML5", "CSS/Sass", "JavaScript/jQuery"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat accusamus cum quia ratione, hic, dignissimos adipisci molestias excepturi quam asperiores enim culpa rerum debitis voluptates recusandae? Consequuntur illum commodi quidem."
+      "description": "Collaborative project with the UW Alumni Association. They did the design work, and I did the development."
     },
     {
       "id": 3,
       "title": "Harvest Hills",
       "type": "UI/UX Design Class Project",
       "image": "harvestHills/harvestHill-comp.png",
-      "external": "https://www.uwalumnistore.com/",
-      "tools": ["Figma", "Photoshop"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat accusamus cum quia ratione, hic, dignissimos adipisci molestias excepturi quam asperiores enim culpa rerum debitis voluptates recusandae? Consequuntur illum commodi quidem."
+      "external": "https://www.figma.com/file/68WK44RQd9yWIgEmEdmYKv/Project-2---Harvest-Hills?node-id=0%3A159",
+      "tools": ["Figma", "Photoshop", "UI/UX"],
+      "description": "Harvest Hills was a project for my UI/UX for Developers class."
     },
     {
       "id": 4,
@@ -62,6 +62,15 @@
       "external": "https://claytondewey.github.io/interactive-rating-component-main/",
       "tools": ["HTML5", "CSS/Sass", "JavaScript"],
       "description": "A Frontend Mentor project to practice handling user interactions and updating the DOM."
+    },
+    {
+      "id": 8,
+      "title": "Random Password Generator",
+      "type": "Udemy Angular Tutorial",
+      "image": "pwApp/pwApp-comp.png",
+      "external": "https://pw-nine-tau.vercel.app",
+      "tools": ["Angular", "TypeScript"],
+      "description": "Udemy Angular tutorial, that I then expanded on to add additional features."
     }
   ]
 }
