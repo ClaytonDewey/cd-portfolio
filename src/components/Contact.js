@@ -8,11 +8,30 @@ const Contact = () => {
         <br />
         <span>Get in Touch</span>
       </h2>
-      <article className="content">
-        <a href="mailto:clay@claytondewey.com" className="btn btn__primary">
-          clay@claytondewey.com
-        </a>
-      </article>
+
+      <form className="form" action="" method="POST">
+        <div className="form__item form__item-half">
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" placeholder="Name" required />
+        </div>
+        <div className="form__item form__item-half">
+          <label htmlFor="emil">Email</label>
+          <input type="email" id="email" placeholder="Email" required />
+        </div>
+        <div className="form__item">
+          <label htmlFor="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Subject" required />
+        </div>
+        <div className="form__item">
+          <label htmlFor="message">Message</label>
+          <textarea id="message" placeholder="message" required></textarea>
+        </div>
+        <div className="form__button">
+          <button type="submit" className="btn btn__primary">
+            Send
+          </button>
+        </div>
+      </form>
     </section>
   );
 };
