@@ -21,7 +21,8 @@
     color: $clr-light-blue-green;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       background-color: $clr-light-blue-green;
       color: $clr-white;
     }
@@ -32,14 +33,11 @@
     color: $clr-green;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       background-color: $clr-green;
       border-color: $clr-green;
       color: $clr-white
-    }
-
-    &:focus {
-      // 
     }
   }
 }
