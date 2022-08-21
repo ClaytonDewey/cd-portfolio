@@ -9,9 +9,19 @@
     flex: 1 1 100%;
     padding: 1rem 1.5rem;
     margin-bottom: 3rem;
+    position: relative;
 
     label {
-      display: block;
+      position: absolute;
+      top: 2rem;
+      left: 1.5rem;
+
+      span {
+        display: inline-block;
+        font-size: 18px;
+        min-width: 5px;
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
     }
 
     input,
@@ -23,6 +33,16 @@
       padding: 1.5rem 0;
       width: 100%;
       border-bottom: 2px solid $clr-light-blue-green;
+      position: relative;
+      z-index: 2;
+    }
+
+    input:focus + label span,
+    input:valid + label span,
+    textarea:focus + label span,
+    textarea:valid + label span {
+      color: $clr-light-blue-green;
+      transform: translateY(-35px);
     }
 
     @media #{$mq-small} {
@@ -34,5 +54,20 @@
 
   &__button {
     padding: 0 1.5rem;
+    width: 100%;
+    
+    button {
+      display: block;
+      width: 100%;
+    }
+
+    @media #{$mq-small} {
+      width: auto;
+
+      button {
+        display: inline-block;
+        width: auto;
+      }
+    }
   }
 }
