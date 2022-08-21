@@ -34,9 +34,21 @@ const Contact = () => {
     });
     setStatus("Submit");
     let result = await response.json();
-    // alert(result.status);
+    alert(result.status);
     resetForm();
   };
+
+  const labels = document.querySelectorAll(".form__item label");
+
+  labels.forEach((label) => {
+    label.innerHTML = label.innerText
+      .split("")
+      .map(
+        (letter, idx) =>
+          `<span style="transition-delay:${idx * 50}ms">${letter}</span>`
+      )
+      .join("");
+  });
 
   return (
     <section id="contact">
@@ -48,47 +60,44 @@ const Contact = () => {
 
       <form className="form" onSubmit={handleSubmit}>
         <div className="form__item form__item-half">
-          <label htmlFor="name">Name</label>
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
             type="text"
             id="name"
-            placeholder="Name"
             required
           />
+          <label htmlFor="name">Name</label>
         </div>
         <div className="form__item form__item-half">
-          <label htmlFor="emil">Email</label>
           <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="email"
             id="email"
-            placeholder="Email"
             required
           />
+          <label htmlFor="email">Email</label>
         </div>
         <div className="form__item">
-          <label htmlFor="subject">Subject</label>
           <input
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
             type="text"
             id="subject"
-            placeholder="Subject"
             required
           />
+          <label htmlFor="subject">Subject</label>
         </div>
         <div className="form__item">
-          <label htmlFor="message">Message</label>
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             id="message"
-            placeholder="message"
+            rows="5"
             required
           ></textarea>
+          <label htmlFor="message">Message</label>
         </div>
         <div className="form__button">
           <button type="submit" className="btn btn__primary">
