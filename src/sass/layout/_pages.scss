@@ -2,10 +2,10 @@
 #portfolio,
 #services,
 #contact {
-  padding: 10rem 1rem 3rem;;
+  padding: 10rem 1rem 3rem;
 
   @media #{$mq-medium} {
-    padding: 5rem;
+    padding: 5rem 5rem 8rem;
   }
 }
 
