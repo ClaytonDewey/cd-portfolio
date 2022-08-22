@@ -58,10 +58,24 @@ const Contact = () => {
           <br />
           <span>Get in Touch</span>
         </h2>
-
-        <form className="form" onSubmit={handleSubmit}>
+        <p className="text-center">
+          I'm still working on getting my email server online. Until it's up and
+          running, feel free to emaili me:
+        </p>
+        <p className="text-center">
+          <a href="mailto:clay@dryadmedia.com" className="btn btn__primary">
+            <i className="fas fa-envelope" style={{ marginRight: "1rem" }}></i>{" "}
+            clay@dryadmedia.com
+          </a>
+        </p>
+        <form
+          className="form"
+          onSubmit={handleSubmit}
+          style={{ opacity: 0.15 }}
+        >
           <div className="form__item form__item-half">
             <input
+              disabled
               value={name}
               onChange={(e) => setName(e.target.value)}
               type="text"
@@ -72,6 +86,7 @@ const Contact = () => {
           </div>
           <div className="form__item form__item-half">
             <input
+              disabled
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
@@ -82,6 +97,7 @@ const Contact = () => {
           </div>
           <div className="form__item">
             <input
+              disabled
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               type="text"
@@ -92,6 +108,7 @@ const Contact = () => {
           </div>
           <div className="form__item">
             <textarea
+              disabled
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               id="message"
@@ -101,7 +118,7 @@ const Contact = () => {
             <label htmlFor="message">Message</label>
           </div>
           <div className="form__button">
-            <button type="submit" className="btn btn__primary">
+            <button disabled type="submit" className="btn btn__primary">
               {status}
             </button>
           </div>
