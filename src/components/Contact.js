@@ -73,14 +73,9 @@ const Contact = () => {
             clay@dryadmedia.com
           </a>
         </p>
-        <form
-          className="form"
-          onSubmit={handleSubmit}
-          style={{ opacity: 0.15 }}
-        >
+        <form className="form" onSubmit={handleSubmit}>
           <div className="form__item form__item-half">
             <input
-              disabled
               value={name}
               onChange={(e) => setName(e.target.value)}
               type="text"
@@ -91,7 +86,6 @@ const Contact = () => {
           </div>
           <div className="form__item form__item-half">
             <input
-              disabled
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
@@ -102,7 +96,6 @@ const Contact = () => {
           </div>
           <div className="form__item">
             <input
-              disabled
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               type="text"
@@ -113,7 +106,6 @@ const Contact = () => {
           </div>
           <div className="form__item">
             <textarea
-              disabled
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               id="message"
@@ -123,7 +115,7 @@ const Contact = () => {
             <label htmlFor="message">Message</label>
           </div>
           <div className="form__button">
-            <button disabled type="submit" className="btn btn__primary">
+            <button type="submit" className="btn btn__primary">
               {status}
             </button>
           </div>
