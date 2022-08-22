@@ -25,7 +25,7 @@ const Contact = () => {
       subject: subject.value,
       message: message.value,
     };
-    let response = await fetch("http://localhost:8000/contact", {
+    let response = await fetch("http://claytondewey.io:8000/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
