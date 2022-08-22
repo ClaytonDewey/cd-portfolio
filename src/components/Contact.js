@@ -64,7 +64,12 @@ const Contact = () => {
         </p>
         <p className="text-center">
           <a href="mailto:clay@dryadmedia.com" className="btn btn__primary">
-            <i className="fas fa-envelope" style={{ marginRight: "1rem" }}></i>{" "}
+            <i
+              aria-label="mail icon"
+              role="img"
+              className="fas fa-envelope"
+              style={{ marginRight: "1rem" }}
+            ></i>{" "}
             clay@dryadmedia.com
           </a>
         </p>
