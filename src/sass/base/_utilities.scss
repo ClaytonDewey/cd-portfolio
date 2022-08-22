@@ -81,6 +81,10 @@ $spacers: map-merge(
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 @media screen and
   (prefers-reduced-motion: reduce), 
   (update: slow) {
