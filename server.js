@@ -5,10 +5,14 @@ require("dotenv").config();
 const nodemailer = require("nodemailer");
 
 const app = express();
+const hostname = "165.227.207.57";
+const port = 5000;
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(8000, () => console.log("Server Running"));
+app.listen(port, hostname, () =>
+  console.log(`Server Running on http://${hostname}:${port}`)
+);
 
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
