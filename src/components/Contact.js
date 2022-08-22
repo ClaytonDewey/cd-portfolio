@@ -25,7 +25,7 @@ const Contact = () => {
       subject: subject.value,
       message: message.value,
     };
-    let response = await fetch("http://claytondewey.io:8000/contact", {
+    let response = await fetch("https://claytondewey.io:8000/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -58,7 +58,7 @@ const Contact = () => {
           <br />
           <span>Get in Touch</span>
         </h2>
-        <p className="text-center">
+        {/* <p className="text-center">
           I'm still working on getting my email server online. Until it's up and
           running, feel free to emaili me:
         </p>
@@ -72,7 +72,7 @@ const Contact = () => {
             ></i>{" "}
             clay@dryadmedia.com
           </a>
-        </p>
+        </p> */}
         <form className="form" onSubmit={handleSubmit}>
           <div className="form__item form__item-half">
             <input
