@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import FadeInSection from "./FadeInSection";
 // https://ciunkos.com/creating-contact-forms-with-nodemailer-and-react
 const Contact = () => {
   const [name, setName] = useState("");
@@ -51,61 +51,63 @@ const Contact = () => {
   });
 
   return (
-    <section id="contact">
-      <h2 className="section__title">
-        Contact Me
-        <br />
-        <span>Get in Touch</span>
-      </h2>
+    <FadeInSection>
+      <section id="contact">
+        <h2 className="section__title">
+          Contact Me
+          <br />
+          <span>Get in Touch</span>
+        </h2>
 
-      <form className="form" onSubmit={handleSubmit}>
-        <div className="form__item form__item-half">
-          <input
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            type="text"
-            id="name"
-            required
-          />
-          <label htmlFor="name">Name</label>
-        </div>
-        <div className="form__item form__item-half">
-          <input
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            type="email"
-            id="email"
-            required
-          />
-          <label htmlFor="email">Email</label>
-        </div>
-        <div className="form__item">
-          <input
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
-            type="text"
-            id="subject"
-            required
-          />
-          <label htmlFor="subject">Subject</label>
-        </div>
-        <div className="form__item">
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            id="message"
-            rows="5"
-            required
-          ></textarea>
-          <label htmlFor="message">Message</label>
-        </div>
-        <div className="form__button">
-          <button type="submit" className="btn btn__primary">
-            {status}
-          </button>
-        </div>
-      </form>
-    </section>
+        <form className="form" onSubmit={handleSubmit}>
+          <div className="form__item form__item-half">
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              type="text"
+              id="name"
+              required
+            />
+            <label htmlFor="name">Name</label>
+          </div>
+          <div className="form__item form__item-half">
+            <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              id="email"
+              required
+            />
+            <label htmlFor="email">Email</label>
+          </div>
+          <div className="form__item">
+            <input
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              type="text"
+              id="subject"
+              required
+            />
+            <label htmlFor="subject">Subject</label>
+          </div>
+          <div className="form__item">
+            <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              id="message"
+              rows="5"
+              required
+            ></textarea>
+            <label htmlFor="message">Message</label>
+          </div>
+          <div className="form__button">
+            <button type="submit" className="btn btn__primary">
+              {status}
+            </button>
+          </div>
+        </form>
+      </section>
+    </FadeInSection>
   );
 };
 
