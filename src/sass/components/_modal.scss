@@ -1,0 +1,58 @@
+.modal {
+
+  &__bg {
+    background: rgba(0,0,0,.7);
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &.visible {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+    }
+  }
+
+  &__body {
+    background: $clr-dark-blue;
+    color: $clr-white;
+    width: 95%;
+    border-radius: 5px;
+  }
+
+  &__header {
+    padding: 2rem;
+    font-weight: 700;
+    // font-size: $fs-200;
+    // border-bottom: 1px solid $clr-light;
+  }
+
+  &__content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    // font-size: $fs-100;
+
+    &-img {
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+      }
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      margin-top: 2rem;
+    }
+  }
+
+}
