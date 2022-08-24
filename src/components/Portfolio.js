@@ -1,7 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "./Modal";
 import FadeInSection from "./FadeInSection";
 
-const Portfolio = ({ projects }) => {
+const Portfolio = ({ projects, isModalVisible, toggleModal }) => {
+  const [selectedProject, setSelectedProject] = useState({});
+
+  const renderContent = () => {
+    return (
+      <>
+        <div className="modal__content-img">
+          <img src={`content/projects/${selectedProject.image}`} alt="" />
+        </div>
+        <div className="modal__content-text">
+          <h2>{selectedProject.title}</h2>
+          <h3>{selectedProject.typee}</h3>
+          <p className="project__description">{selectedProject.description}</p>
+          <a
+            href={selectedProject.external}
+            aria-label="External Link"
+            className="external"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            View Site
+          </a>
+          <p className="m-0">Tools used:</p>
+          <ul className="project__tools">
+            {selectedProject.tools.map((tool) => {
+              return <li key={tool}>{tool}</li>;
+            })}
+          </ul>
+        </div>
+      </>
+    );
+  };
+
+  const renderActions = () => {
+    return (
+      <>
+        <button onClick={toggleModal} className="btn btn__cancel">
+          Close
+        </button>
+      </>
+    );
+  };
+
   return (
     <FadeInSection>
       <section id="portfolio">
@@ -13,17 +56,18 @@ const Portfolio = ({ projects }) => {
 
         <div className="flex flex__row-wrap">
           {projects.map((project) => {
-            const { id, title, type, image, external, tools, description } =
-              project;
+            const { id, title, type, image } = project;
             return (
               <div key={id} className="project">
                 <div className="project__body">
                   <div className="project__image">
                     <a
-                      href={external}
-                      aria-label="External Link"
-                      rel="noopener noreferrer"
-                      target="_blank"
+                      href="/"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setSelectedProject(project);
+                        toggleModal(id);
+                      }}
                     >
                       <img src={`content/projects/${image}`} alt="" />
                     </a>
@@ -32,7 +76,7 @@ const Portfolio = ({ projects }) => {
                     <h2 className="project__title">{title}</h2>
                     <h3 className="project__type">{type}</h3>
                   </div>
-                  <div className="project__content">
+                  {/* <div className="project__content">
                     <p className="project__description">{description}</p>
                     <a
                       href={external}
@@ -49,13 +93,21 @@ const Portfolio = ({ projects }) => {
                         return <li key={tool}>{tool}</li>;
                       })}
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             );
           })}
         </div>
       </section>
+      {isModalVisible && (
+        <Modal
+          title={selectedProject.title}
+          content={renderContent()}
+          actions={renderActions()}
+          onDismiss={() => toggleModal()}
+        />
+      )}
     </FadeInSection>
   );
 };
