@@ -11,6 +11,9 @@ import { Link } from "react-scroll";
 const App = () => {
   const { projects } = Data;
   const [loading, setLoading] = useState(true);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const toggleModal = () => setIsModalVisible(!isModalVisible);
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 6000);
@@ -23,7 +26,12 @@ const App = () => {
           <Header Link={Link} title="home" />
           <main id="main" className="container">
             <About Link={Link} title="about" />
-            <Portfolio title="portfolio" projects={projects} />
+            <Portfolio
+              title="portfolio"
+              projects={projects}
+              isModalVisible={isModalVisible}
+              toggleModal={toggleModal}
+            />
             <Contact title="contact" />
           </main>
           <Footer />
