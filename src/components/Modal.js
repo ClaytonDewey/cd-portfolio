@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { ReactDOM } from "react-dom";
+import ReactDOM from "react-dom";
 
 const Modal = (props) => {
   const { title, content, actions, onDismiss, isOpen } = props;
