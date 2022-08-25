@@ -43,7 +43,7 @@ const Modal = (props) => {
   return ReactDOM.createPortal(
     <div
       onClick={onDismiss}
-      className={`modal modal_bg ${isOpen ? "" : "visible"}`}
+      className={`modal modal__bg ${isOpen ? "" : "visible"}`}
       aria-hidden={isOpen}
       aria-labelledby="heading"
       aria-describedby="content"
