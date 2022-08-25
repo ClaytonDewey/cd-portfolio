@@ -40,4 +40,23 @@
       color: $clr-white
     }
   }
+
+  &__cancel {
+    border-color: $clr-red;
+    color: $clr-red;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $clr-red;
+      border-color: $clr-red;
+      color: $clr-white
+    }
+  }
+
+  svg {
+    margin-left: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
 }
