@@ -6,7 +6,6 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Data from "../site_data.json";
-import { Link } from "react-scroll";
 
 const App = () => {
   const { projects } = Data;
@@ -16,18 +15,17 @@ const App = () => {
   const toggleModal = () => setIsModalVisible(!isModalVisible);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 6000);
+    setTimeout(() => setLoading(false), 2000);
   }, []);
 
   return (
     <>
       {!loading ? (
         <>
-          <Header Link={Link} title="home" />
+          <Header />
           <main id="main" className="container">
-            <About Link={Link} title="about" />
+            <About />
             <Portfolio
-              title="portfolio"
               projects={projects}
               isModalVisible={isModalVisible}
               toggleModal={toggleModal}

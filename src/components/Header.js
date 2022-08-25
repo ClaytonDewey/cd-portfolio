@@ -1,10 +1,10 @@
 import React from "react";
 import Nav from "./Nav";
 
-const Header = ({ Link }) => {
+const Header = () => {
   return (
     <div id="home">
-      <Nav Link={Link} />
+      <Nav />
       <header className="header__index">
         <div className="header__wrapper">
           <div className="page-header">
@@ -20,16 +20,9 @@ const Header = ({ Link }) => {
             </p>
           </div>
 
-          <Link
-            className="scroll-down"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
+          <a href="#about" className="scroll-down">
             <div className="visually-hidden">About Me</div>
-          </Link>
+          </a>
         </div>
       </header>
     </div>

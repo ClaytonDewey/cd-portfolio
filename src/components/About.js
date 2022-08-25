@@ -1,7 +1,7 @@
 import React from "react";
 import FadeInSection from "./FadeInSection";
 
-const About = ({ Link }) => {
+const About = () => {
   return (
     <FadeInSection>
       <section id="about">
@@ -35,17 +35,9 @@ const About = ({ Link }) => {
             </p>
 
             <div className="flex btn__container">
-              <Link
-                className="btn btn__primary"
-                activeClass=""
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
+              <a href="#contact" className="btn btn__primary">
                 Get In Touch
-              </Link>
+              </a>
               <a
                 href="./files/Resume-Clayton_Dewey.pdf"
                 target="_blank"

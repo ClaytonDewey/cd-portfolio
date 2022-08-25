@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Nav = ({ Link }) => {
+const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
   useEffect(() => {
@@ -24,58 +24,16 @@ const Nav = ({ Link }) => {
 
       <ul>
         <li>
-          <Link
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={() => {
-              setIsNavOpen(false);
-            }}
-          >
-            Home
-          </Link>
+          <a href="/">Home</a>
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={() => setIsNavOpen(false)}
-          >
-            About
-          </Link>
+          <a href="#about">About</a>
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="portfolio"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={() => setIsNavOpen(false)}
-          >
-            Portfolio
-          </Link>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={() => setIsNavOpen(false)}
-          >
-            Contact
-          </Link>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
