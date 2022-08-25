@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 import FadeInSection from "./FadeInSection";
+import IconExternal from "./icons/external";
 
 const Portfolio = ({ projects, isModalVisible, toggleModal }) => {
   const [selectedProject, setSelectedProject] = useState({});
@@ -12,17 +13,16 @@ const Portfolio = ({ projects, isModalVisible, toggleModal }) => {
           <img src={`content/projects/${selectedProject.image}`} alt="" />
         </div>
         <div className="modal__content-text">
-          <h2>{selectedProject.title}</h2>
-          <h3>{selectedProject.typee}</h3>
+          <h3>{selectedProject.type}</h3>
           <p className="project__description">{selectedProject.description}</p>
           <a
             href={selectedProject.external}
             aria-label="External Link"
-            className="external"
+            className="btn btn__primary"
             rel="noopener noreferrer"
             target="_blank"
           >
-            View Site
+            View Site <IconExternal />
           </a>
           <p className="m-0">Tools used:</p>
           <ul className="project__tools">
