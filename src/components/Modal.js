@@ -16,7 +16,7 @@ const Modal = (props) => {
 
   const modalRef = React.createRef();
   const handleTabKey = (e) => {
-    const focusableModalElements = modalRef.current.querySelectoryAll(
+    const focusableModalElements = modalRef.current.querySelectorAll(
       'a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select'
     );
 
