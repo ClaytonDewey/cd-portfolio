@@ -56,7 +56,9 @@ const Modal = (props) => {
         onClick={(e) => e.stopPropagation()}
         className="modal__body"
       >
-        <div className="modal__header">{title}</div>
+        <div className="modal__header">
+          <h2>{title}</h2>
+        </div>
         <div id="content" className="modal__content">
           {content}
         </div>
