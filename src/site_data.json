@@ -80,6 +80,21 @@
       "external": "https://2022-spring-adv-fe-mowe.github.io/tca-cribbage/",
       "tools": ["React", "TypeScript", "CSS/Sass"],
       "description": "Cribbage stats tracking app created as a project for my Advanced Front End Development class (Spring 2022)."
+    },
+    {
+      "id": 10,
+      "title": "Spotify Profile App",
+      "type": "End product of the \"Build a Spotify Connected App\" newline course",
+      "image": "spotify-profile/spotify-comp.png",
+      "external": "https://dm-spotify-app.herokuapp.com/",
+      "tools": [
+        "React",
+        "Styled Components",
+        "Express",
+        "Spotify API",
+        "Heroku"
+      ],
+      "description": "A web app for visualizing personalized Spotify data built with React, Express, and the Spotify API."
     }
   ]
 }
