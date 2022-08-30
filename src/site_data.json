@@ -71,6 +71,15 @@
       "external": "https://pw-nine-tau.vercel.app",
       "tools": ["Angular", "TypeScript"],
       "description": "Udemy Angular tutorial, that I then expanded on to add additional features."
+    },
+    {
+      "id": 9,
+      "title": "TCA Cribbage App",
+      "type": "React Project for Advanced Frontend Class",
+      "image": "cribbage/cribbage-comp.png",
+      "external": "https://2022-spring-adv-fe-mowe.github.io/tca-cribbage/",
+      "tools": ["React", "TypeScript", "CSS/Sass"],
+      "description": "Cribbage stats tracking app created as a project for my Advanced Front End Development class (Spring 2022)."
     }
   ]
 }
