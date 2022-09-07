@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-const Nav = () => {
+const Nav = ({ Link, animateScroll }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScrollNav(window.scrollY > 50);
@@ -24,16 +25,56 @@ const Nav = () => {
 
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link
+            href="#main"
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link
+            href="#about"
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <Link
+            href="#portfolio"
+            activeClass="active"
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Portfolio
+          </Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link
+            href="#contact"
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

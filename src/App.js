@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
-import Loader from "./Loader";
-import Header from "./Header";
-import About from "./About";
-import Portfolio from "./Portfolio";
-import Contact from "./Contact";
-import Footer from "./Footer";
-import Data from "../site_data.json";
+import {
+  About,
+  Contact,
+  Footer,
+  Header,
+  Loader,
+  Portfolio,
+} from "./components";
+import { Link, animateScroll } from "react-scroll";
+import Data from "./site_data.json";
 
 const App = () => {
   const { projects } = Data;
@@ -22,10 +25,11 @@ const App = () => {
     <>
       {!loading ? (
         <>
-          <Header />
-          <main id="main" className="container">
-            <About />
+          <Header Link={Link} animateScroll={animateScroll} />
+          <main title="home" id="main" className="container">
+            <About Link={Link} animateScroll={animateScroll} title="about" />
             <Portfolio
+              title="portfolio"
               projects={projects}
               isModalVisible={isModalVisible}
               toggleModal={toggleModal}

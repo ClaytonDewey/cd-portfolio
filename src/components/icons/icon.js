@@ -9,7 +9,7 @@ import {
   IconLinkedin,
   IconStar,
   IconTwitter,
-} from "./icon.js";
+} from "./icon";
 
 const Icon = ({ name }) => {
   switch (name) {
