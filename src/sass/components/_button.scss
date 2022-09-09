@@ -17,39 +17,39 @@
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
   &__primary {
-    border-color: $clr-light-blue-green;
-    color: $clr-light-blue-green;
+    border-color: $clr-primary;
+    color: $clr-primary;
 
     &:hover,
     &:active,
     &:focus {
-      background-color: $clr-light-blue-green;
+      background-color: $clr-primary;
       color: $clr-white;
     }
   }
 
   &__secondary {
-    border-color: $clr-green;
-    color: $clr-green;
+    border-color: $clr-secondary;
+    color: $clr-secondary;
 
     &:hover,
     &:active,
     &:focus {
-      background-color: $clr-green;
-      border-color: $clr-green;
+      background-color: $clr-secondary;
+      border-color: $clr-secondary;
       color: $clr-white
     }
   }
 
   &__cancel {
-    border-color: $clr-red;
-    color: $clr-red;
+    border-color: $clr-warning;
+    color: $clr-warning;
 
     &:hover,
     &:active,
     &:focus {
-      background-color: $clr-red;
-      border-color: $clr-red;
+      background-color: $clr-warning;
+      border-color: $clr-warning;
       color: $clr-white
     }
   }

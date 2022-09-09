@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  color: $clr-light-blue-green;
+  color: $clr-primary;
 }
 
 p {
@@ -32,7 +32,7 @@ article {
     padding-bottom: 2rem;
     margin-bottom: 3rem;
     margin-left: 2rem;
-    border-bottom: 5px solid $clr-green;
+    border-bottom: 5px solid $clr-secondary;
 
     span {
       font-size: 60%;

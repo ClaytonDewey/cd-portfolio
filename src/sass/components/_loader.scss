@@ -158,12 +158,12 @@
 
 #loader-wrapper {
   span {
-    border: 10px solid $clr-green;
+    border: 10px solid $clr-secondary;
     margin: 10px;
     display: block;
     border-radius: 100%;
-    border-top-color: $clr-darkest-blue;
-    border-right-color: $clr-darkest-blue;
+    border-top-color: $clr-darkest-primary;
+    border-right-color: $clr-darkest-primary;
     animation: dreh 4s infinite cubic-bezier(.56,-0.24,.41,1.23);
   }
 }

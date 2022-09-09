@@ -15,7 +15,7 @@
     max-width: 100%;
     display: block;
     margin: auto;
-    border: 1px solid $clr-green;
+    border: 1px solid $clr-secondary;
     border-radius: 4px;
     padding: 1rem;
   }
@@ -76,7 +76,7 @@
   flex: 1 1 100%;
   
   &__body {
-    background: $clr-dark-blue;
+    background: $clr-darker-primary;
     padding: 2rem;
 
     &:hover {
@@ -112,7 +112,7 @@
     bottom: 2rem;
     right: 2rem;
     padding: 2rem;
-    background: darken($clr-dark-blue, 5%);
+    background: darken($clr-darker-primary, 5%);
     transition: all .45s ease-in-out;
 
     a {

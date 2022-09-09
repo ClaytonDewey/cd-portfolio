@@ -38,7 +38,7 @@
     }
 
     &:hover {
-      // background-color: lighten($clr-dark-blue-green, 5%);
+      // background-color: lighten($clr-dark-primary, 5%);
       .icon {
         &__bar {
           &:nth-child(2) {
@@ -79,22 +79,22 @@
           cursor: pointer;
 
           &.active {
-            color: $clr-light-blue-green;
-            border-bottom: 2px solid $clr-light-blue-green;
+            color: $clr-primary;
+            border-bottom: 2px solid $clr-primary;
           }
         }
       }
     }
 
     &.bg-dark {
-      background: $clr-dark-blue;
-      border-bottom: 1px solid $clr-dark-blue-green;
+      background: $clr-darker-primary;
+      border-bottom: 1px solid $clr-dark-primary;
     }
 
     &.open {
       ul {
         display: block;
-        background: $clr-dark-blue;
+        background: $clr-darker-primary;
         padding-top: 5rem;
 
         li {
