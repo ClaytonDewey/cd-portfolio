@@ -26,52 +26,56 @@ const Nav = ({ Link, animateScroll }) => {
       <ul>
         <li>
           <Link
+            onClick={() => setIsNavOpen(!isNavOpen)}
             href="#main"
             activeClass="active"
             to="home"
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={1000}
           >
             Home
           </Link>
         </li>
         <li>
           <Link
+            onClick={() => setIsNavOpen(!isNavOpen)}
             href="#about"
             activeClass="active"
             to="about"
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={1000}
           >
             About
           </Link>
         </li>
         <li>
           <Link
+            onClick={() => setIsNavOpen(!isNavOpen)}
             href="#portfolio"
             activeClass="active"
             to="portfolio"
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={1000}
           >
             Portfolio
           </Link>
         </li>
         <li>
           <Link
+            onClick={() => setIsNavOpen(!isNavOpen)}
             href="#contact"
             activeClass="active"
             to="contact"
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={1000}
           >
             Contact
           </Link>
