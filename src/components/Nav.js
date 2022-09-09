@@ -26,13 +26,16 @@ const Nav = ({ Link, animateScroll }) => {
       <ul>
         <li>
           <Link
-            onClick={() => setIsNavOpen(!isNavOpen)}
+            onClick={() => {
+              if (isNavOpen) {
+                setIsNavOpen(false);
+              }
+            }}
             href="#main"
             activeClass="active"
             to="home"
             spy={true}
             smooth={true}
-            offset={-70}
             duration={1000}
           >
             Home
@@ -40,7 +43,11 @@ const Nav = ({ Link, animateScroll }) => {
         </li>
         <li>
           <Link
-            onClick={() => setIsNavOpen(!isNavOpen)}
+            onClick={() => {
+              if (isNavOpen) {
+                setIsNavOpen(false);
+              }
+            }}
             href="#about"
             activeClass="active"
             to="about"
@@ -54,7 +61,11 @@ const Nav = ({ Link, animateScroll }) => {
         </li>
         <li>
           <Link
-            onClick={() => setIsNavOpen(!isNavOpen)}
+            onClick={() => {
+              if (isNavOpen) {
+                setIsNavOpen(false);
+              }
+            }}
             href="#portfolio"
             activeClass="active"
             to="portfolio"
@@ -68,7 +79,11 @@ const Nav = ({ Link, animateScroll }) => {
         </li>
         <li>
           <Link
-            onClick={() => setIsNavOpen(!isNavOpen)}
+            onClick={() => {
+              if (isNavOpen) {
+                setIsNavOpen(false);
+              }
+            }}
             href="#contact"
             activeClass="active"
             to="contact"
