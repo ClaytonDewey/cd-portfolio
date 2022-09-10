@@ -2,6 +2,7 @@ export { default as About } from "./About";
 export { default as Contact } from "./Contact";
 export { default as FadeInSection } from "./FadeInSection";
 export { default as Footer } from "./Footer";
+export { default as GoToTop } from "./GoToTop";
 export { default as Header } from "./Header";
 export { default as Loader } from "./Loader";
 export { default as Modal } from "./Modal";
