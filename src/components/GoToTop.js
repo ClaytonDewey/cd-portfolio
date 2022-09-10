@@ -1,10 +1,13 @@
 import React from "react";
 
-const GoToTop = ({ showGoToTop, scrollUp }) => {
+const GoToTop = (props) => {
   return (
     <>
-      <div className={showGoToTop} onClick={scrollUp}>
-        <button className="goTop">
+      <div>
+        <button
+          className={props.showGoTop}
+          onClick={props.animateScroll.scrollToTop}
+        >
           <i className="goTop__text fa-solid fa-chevron-up"></i>
         </button>
       </div>

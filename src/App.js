@@ -15,8 +15,25 @@ const App = () => {
   const { projects } = Data;
   const [loading, setLoading] = useState(true);
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [showGoTop, setShowGoTop] = useState("goTopHidden");
 
   const toggleModal = () => setIsModalVisible(!isModalVisible);
+
+  const handleVisibleButton = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+
+    if (scrollPosition > 70) {
+      return setShowGoTop("goTop");
+    } else if (scrollPosition < 70) {
+      return setShowGoTop("goTopHidden");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleVisibleButton);
+  });
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 2000);
@@ -26,7 +43,11 @@ const App = () => {
     <>
       {!loading ? (
         <>
-          <GoToTop />
+          <GoToTop
+            Link={Link}
+            animateScroll={animateScroll}
+            showGoTop={showGoTop}
+          />
           <Header Link={Link} animateScroll={animateScroll} />
           <main title="home" id="main" className="container">
             <About Link={Link} animateScroll={animateScroll} title="about" />
