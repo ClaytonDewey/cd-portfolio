@@ -3,6 +3,7 @@ import {
   About,
   Contact,
   Footer,
+  GoToTop,
   Header,
   Loader,
   Portfolio,
@@ -25,6 +26,7 @@ const App = () => {
     <>
       {!loading ? (
         <>
+          <GoToTop />
           <Header Link={Link} animateScroll={animateScroll} />
           <main title="home" id="main" className="container">
             <About Link={Link} animateScroll={animateScroll} title="about" />
