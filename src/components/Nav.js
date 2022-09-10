@@ -36,7 +36,7 @@ const Nav = ({ Link, animateScroll }) => {
             to="home"
             spy={true}
             smooth={true}
-            duration={1000}
+            duration={750}
           >
             Home
           </Link>
@@ -54,7 +54,7 @@ const Nav = ({ Link, animateScroll }) => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={1000}
+            duration={750}
           >
             About
           </Link>
@@ -72,7 +72,7 @@ const Nav = ({ Link, animateScroll }) => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={1000}
+            duration={750}
           >
             Portfolio
           </Link>
@@ -90,7 +90,7 @@ const Nav = ({ Link, animateScroll }) => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={1000}
+            duration={750}
           >
             Contact
           </Link>
