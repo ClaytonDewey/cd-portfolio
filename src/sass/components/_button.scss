@@ -60,3 +60,30 @@
     width: 1.5rem;
   }
 }
+
+.goTopHidden {
+  display: none;
+}
+
+.goTop {
+  display: block;
+  &__text {
+    z-index: 100;
+    position: fixed;
+    background: $clr-primary;
+    box-shadow: 2px 2px 5px $clr-secondary;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 25px;
+    bottom: 5%;
+    left: 90%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    transition: transform .25s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
