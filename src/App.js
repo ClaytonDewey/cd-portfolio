@@ -43,6 +43,9 @@ const App = () => {
     <>
       {!loading ? (
         <>
+          <a href="#main" className="skipLink">
+            Skip to Content
+          </a>
           <GoToTop
             Link={Link}
             animateScroll={animateScroll}

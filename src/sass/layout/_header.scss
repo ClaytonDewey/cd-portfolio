@@ -74,3 +74,17 @@ a.scroll-down {
   transform: translateX(-50%);
   cursor: pointer;
 }
+
+.skipLink {
+  position: absolute;
+    left: -1000px;
+    color: white;
+    background-color: black;
+}
+
+.skipLink:focus,
+.skipLink:active {
+  left: 0;
+  top: 0;
+  z-index: 200;
+}
