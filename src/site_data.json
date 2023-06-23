@@ -1,0 +1,85 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "University Book Store",
+      "type": "E-Commerce Site",
+      "image": "uwbookstore/bookstore-comp.png",
+      "external": "https://www.uwbookstore.com/",
+      "tools": ["HTML5", "CSS/Sass", "JavaScript/jQuery"],
+      "description": "E-commerce site developed for the University Book Store."
+    },
+    {
+      "id": 2,
+      "title": "UW Alumni Store",
+      "type": "E-Commerce Site",
+      "image": "uwalumnistore/alumniStore-comp.png",
+      "external": "https://www.uwalumnistore.com/",
+      "tools": ["HTML5", "CSS/Sass", "JavaScript/jQuery"],
+      "description": "Collaborative project with the UW Alumni Association. They did the design work, and I did the development."
+    },
+    {
+      "id": 3,
+      "title": "Harvest Hills",
+      "type": "UI/UX Design Class Project",
+      "image": "harvestHills/harvestHill-comp.png",
+      "external": "https://www.figma.com/file/68WK44RQd9yWIgEmEdmYKv/Project-2---Harvest-Hills?node-id=0%3A159&t=YwddEsI8BvAeFVJE-1",
+      "tools": ["Figma", "Photoshop", "UI/UX"],
+      "description": "Harvest Hills was a project for my UI/UX for Developers class."
+    },
+    {
+      "id": 4,
+      "title": "Ja\\m/ing",
+      "type": "Spotify App",
+      "image": "jamming/jammming-comp.png",
+      "external": "http://dryadmedia.surge.sh/",
+      "tools": ["React", "Spotify API", "surge.sh"],
+      "description": "Jammming was a Codecademy.com tutorial project to build an app for creating, and saving Spotify playlists. Codecademy supplied  the original front end design/layout. As it was designed there were some UI/UX & accessibility flaws. This design fixes some of these issues."
+    },
+    {
+      "id": 5,
+      "title": "Advice generator app",
+      "type": "Frontend Mentor Challenge",
+      "image": "adviceApp/adviceApp-comp.png",
+      "external": "https://claytondewey.github.io/advice-generator-app/",
+      "tools": ["HTML5", "CSS/Sass", "JavaScript", "API"],
+      "description": "A Frontend Mentor project for learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice."
+    },
+    {
+      "id": 6,
+      "title": "NFT preview card component",
+      "type": "Frontend Mentor Challenge",
+      "image": "nftCard/nftCard-comp.png",
+      "external": "https://claytondewey.github.io/nft-preview-card-component/",
+      "tools": ["HTML5", "CSS/Sass"],
+      "description": "A Frontend Mentor challenge for HTML/CSS/Sass."
+    },
+    {
+      "id": 7,
+      "title": "Interactive rating component",
+      "type": "Frontend Mentor Challenge",
+      "image": "interactiveComponent/interactiveComponent-comp.png",
+      "external": "https://claytondewey.github.io/interactive-rating-component-main/",
+      "tools": ["HTML5", "CSS/Sass", "JavaScript"],
+      "description": "A Frontend Mentor project to practice handling user interactions and updating the DOM."
+    },
+    {
+      "id": 8,
+      "title": "Random Password Generator",
+      "type": "Udemy Angular Tutorial",
+      "image": "pwApp/pwApp-comp.png",
+      "external": "https://pw-nine-tau.vercel.app",
+      "tools": ["Angular", "TypeScript"],
+      "description": "Udemy Angular tutorial, that I then expanded on to add additional features."
+    },
+    {
+      "id": 9,
+      "title": "TCA Cribbage App",
+      "type": "React Project for Advanced Frontend Class",
+      "image": "cribbage/cribbage-comp.png",
+      "external": "https://2022-spring-adv-fe-mowe.github.io/tca-cribbage/",
+      "tools": ["React", "TypeScript", "CSS/Sass"],
+      "description": "Cribbage stats tracking app created as a project for my Advanced Front End Development class (Spring 2022)."
+    }
+  ]
+}
