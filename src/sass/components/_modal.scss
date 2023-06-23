@@ -1,0 +1,104 @@
+.modal {
+  &__bg {
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+
+    &.visible {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+    }
+  }
+
+  &__body {
+    background: $clr-darker-primary;
+    color: $clr-white;
+    width: 95%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
+  &__header {
+    padding: 2rem;
+    font-weight: 700;
+    font-size: $fs-xxl;
+    border-bottom: 1px solid $clr-gray;
+  }
+
+  &__content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: $fs-md;
+
+    &-img {
+      img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+      }
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      margin-block: 2rem;
+    }
+  }
+
+  &__actions {
+    padding: 2rem;
+    border-top: 1px solid $clr-gray;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    width: auto;
+
+    > .btn {
+      margin: inherit;
+    }
+  }
+
+  @media #{$mq-small} {
+    &__body {
+      width: 85%;
+    }
+
+    &__content {
+      padding-block: 5rem;
+      flex-direction: row;
+
+      .btn {
+        display: inline-flex;
+      }
+
+      &-img {
+        flex: 1;
+      }
+
+      &-text {
+        flex: 0 0 65%;
+      }
+    }
+  }
+
+  @media #{$mq-medium} {
+    &__body {
+      width: 55%;
+    }
+  }
+}

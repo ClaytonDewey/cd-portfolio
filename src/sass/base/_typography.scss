@@ -1,0 +1,41 @@
+html {
+  // This defines what 1rem is.
+  font-size: 62.5%; // 1rem = 10px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: $ff-sans;
+  font-size: $fs-md;
+}
+
+a {
+  color: $clr-primary;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+article {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.section {
+  &__title {
+    display: inline-block;
+    width: auto;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    border-bottom: 5px solid $clr-secondary;
+
+    span {
+      font-size: 60%;
+      font-weight: 300;
+    }
+  }
+}

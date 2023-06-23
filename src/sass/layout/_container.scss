@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  max-width: 142rem;
+  margin: 0 auto 2rem;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  @media #{$mq-medium} {
+    flex-flow: row wrap;
+    &__left {
+      &-40 {
+        flex: 1 0 40%;
+      }
+      &-60 {
+        flex: 1 0 60%;
+      }
+    }
+
+    &__right {
+      &-40 {
+        flex: 1 0 40%;
+      }
+      &-60 {
+        flex: 1 0 60%;
+      }
+    }
+  }
+}

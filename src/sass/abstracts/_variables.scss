@@ -1,0 +1,50 @@
+// Breakpoints
+$bp-xsmall: 28.125em; // 450px;
+$bp-small: 48em; // 768px;
+$bp-medium: 64em; // 1024px;
+$bp-large: 85.375em; // 1366px;
+$bp-xlarge: 120em; // 1920px;
+
+// Media Queries
+$mq-xsmall: 'screen and (min-width: #{$bp-xsmall})';
+$mq-small: 'screen and (min-width: #{$bp-small})';
+$mq-medium: 'screen and (min-width: #{$bp-medium})';
+$mq-large: 'screen and (min-width: #{$bp-large})';
+$mq-xlarge: 'screen and (min-width: #{$bp-xlarge})';
+$mq-retina: '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)';
+
+// Root variables
+// https://www.schemecolor.com/dark-sea.php
+$ff-sans: 'SF Pro', 'Roboto', sans-serif;
+$ff-mono: 'SF Mono', 'Robot Mono', monospace;
+
+$fs-xxs: 1.2rem;
+$fs-xs: 1.3rem;
+$fs-sm: 1.4rem;
+$fs-md: 1.6rem;
+$fs-lg: 1.8rem;
+$fs-xl: 2rem;
+$fs-xxl: 2.2rem;
+$fs-heading: 6rem;
+
+$fw-bold: 700;
+$fw-regular: 400;
+$fw-light: 300;
+
+$clr-primary: #46a6b9;
+$clr-dark-primary: #023c4d;
+$clr-darker-primary: #082540;
+$clr-darkest-primary: #071932;
+
+$clr-secondary: #167979;
+$clr-dark-secondary: #0d4848;
+$clr-darkest-secondary: #032d39;
+
+$clr-warning: #b95946;
+$clr-white: #f1f1f1;
+$clr-black: #333;
+
+$clr-gray: #d4d4cf;
+$clr-dark-gray: #a7afb1;
+$clr-darkest-gray: #8d9497;
+$clr-blue-gray: #6d8190;

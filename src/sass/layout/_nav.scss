@@ -1,0 +1,136 @@
+.nav {
+  &__toggler {
+    position: absolute;
+    cursor: pointer;
+    left: 1rem;
+    top: 5px;
+    font-size: 2rem;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    z-index: 200;
+    padding: 1.5rem;
+    -webkit-appearance: button;
+    transition: all 0.3s ease;
+
+    .icon {
+      &__bar {
+        background-color: $clr-white;
+        display: block;
+        width: 2.2rem;
+        height: 2px;
+        border-radius: 1px;
+        transform: rotate(0deg) translate(0px, 0px);
+        transition: all 0.3s ease;
+
+        &:nth-child(2) {
+          opacity: 1;
+          width: 1.6rem;
+          margin-right: auto;
+        }
+
+        + .icon__bar {
+          margin-top: 4px;
+        }
+      }
+    }
+
+    &:hover {
+      // background-color: lighten($clr-dark-primary, 5%);
+      .icon {
+        &__bar {
+          &:nth-child(2) {
+            width: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__primary {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 5rem;
+
+    ul {
+      display: none;
+      list-style-type: none;
+      width: auto;
+      margin: 0 auto;
+
+      li {
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+
+        a {
+          display: inline-block;
+          padding: 1.5rem;
+          text-decoration: none;
+          color: $clr-white;
+          font-family: $ff-mono;
+          cursor: pointer;
+
+          &.active {
+            color: $clr-primary;
+            border-bottom: 2px solid $clr-primary;
+          }
+        }
+      }
+    }
+
+    &.bg-dark {
+      background: $clr-darker-primary;
+      border-bottom: 1px solid $clr-dark-primary;
+    }
+
+    &.open {
+      ul {
+        display: block;
+        background: $clr-darker-primary;
+        padding-top: 5rem;
+        border-bottom: 1px solid $clr-secondary;
+
+        li {
+          display: block;
+        }
+      }
+      .icon {
+        &__bar {
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 4px);
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:nth-child(3) {
+            transform: rotate(-45deg) translate(4px, -4px);
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$mq-small} {
+    &__toggler {
+      display: none;
+    }
+
+    &__primary {
+      text-align: center;
+      height: auto;
+      // position: absolute;
+
+      ul {
+        display: block;
+      }
+    }
+  }
+}

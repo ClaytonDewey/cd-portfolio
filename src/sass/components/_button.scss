@@ -1,0 +1,90 @@
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-family: $ff-mono;
+  font-size: $fs-sm;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: transparent;
+  color: inherit;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &__primary {
+    border-color: $clr-primary;
+    color: $clr-primary;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $clr-primary;
+      color: $clr-white;
+    }
+  }
+
+  &__secondary {
+    border-color: $clr-secondary;
+    color: $clr-secondary;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $clr-secondary;
+      border-color: $clr-secondary;
+      color: $clr-white;
+    }
+  }
+
+  &__cancel {
+    border-color: $clr-warning;
+    color: $clr-warning;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $clr-warning;
+      border-color: $clr-warning;
+      color: $clr-white;
+    }
+  }
+
+  svg {
+    margin-left: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.goTopHidden {
+  display: none;
+}
+
+.goTop {
+  display: block;
+
+  z-index: 100;
+  position: fixed;
+  background: $clr-primary;
+  box-shadow: 2px 2px 5px $clr-secondary;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid $clr-secondary;
+  border-radius: 25px;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  transition: transform 0.25s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

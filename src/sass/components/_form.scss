@@ -1,0 +1,62 @@
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+
+  &__item {
+    flex: 1 1 100%;
+    padding: 1rem 1.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+
+    label {
+      position: absolute;
+      top: -2rem;
+      left: 1.5rem;
+      color: $clr-primary;
+      // transform: translateY(-35px);
+      display: inline-block;
+      font-size: 18px;
+    }
+
+    input,
+    textarea {
+      color: $clr-white;
+      font-family: $ff-mono;
+      background: transparent;
+      border: none;
+      padding: 1.5rem 0;
+      width: 100%;
+      border-bottom: 2px solid $clr-primary;
+      position: relative;
+      z-index: 2;
+    }
+
+    @media #{$mq-small} {
+      &-half {
+        flex: 1 1 50%;
+      }
+    }
+  }
+
+  &__button {
+    padding: 0 1.5rem;
+    width: 100%;
+
+    button {
+      display: block;
+      width: 100%;
+    }
+
+    @media #{$mq-small} {
+      width: auto;
+
+      button {
+        display: inline-block;
+        width: auto;
+      }
+    }
+  }
+}
