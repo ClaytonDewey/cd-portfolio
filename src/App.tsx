@@ -1,5 +1,6 @@
 import './App.scss';
 import About from './components/About';
+import Contact from './components/Contact';
 import Header from './components/Header';
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <>
       <Header />
       <About />
+      <Contact />
     </>
   );
 };
