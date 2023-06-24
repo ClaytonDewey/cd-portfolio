@@ -1,4 +1,4 @@
-const About = () => {
+const About = ({ Link }) => {
   return (
     <>
       <section id='about'>
@@ -32,7 +32,7 @@ const About = () => {
             </p>
 
             <div className='flex btn__container'>
-              {/* <Link
+              <Link
                 to='contact'
                 spy={true}
                 smooth={true}
@@ -41,7 +41,7 @@ const About = () => {
                 href='#contact'
                 className='btn btn__primary'>
                 Get In Touch
-              </Link> */}
+              </Link>
               <a
                 href='./files/resume.pdf'
                 target='_blank'

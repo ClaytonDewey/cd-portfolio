@@ -53,7 +53,10 @@ const App = () => {
           /> */}
           <Header Link={Link} animateScroll={animateScroll} />
           <main title='home' id='main' className='container'>
-            <About Link={Link} animateScroll={animateScroll} title='about' />
+            <About
+              Link={Link}
+              // animateScroll={animateScroll}
+            />
             <Portfolio
               projects={projects}
               isModalVisible={isModalVisible}
