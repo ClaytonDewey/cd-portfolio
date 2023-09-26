@@ -73,6 +73,7 @@
   flex-direction: column;
   position: relative;
   flex: 1 1 100%;
+  font-family: $ff-sans;
 
   &__body {
     background: $clr-darker-primary;
