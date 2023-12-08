@@ -64,6 +64,15 @@ const About = ({ Link }) => {
               </a>
             </li>
             <li>
+              <a
+                rel='me'
+                href='https://mastodon.social/@ClaytonDewey'
+                className='mr-3'>
+                <i class='fa-brands fa-mastodon'></i>
+                @ClaytonDewey
+              </a>
+            </li>
+            <li>
               <a href='https://twitter.com/ClaytonDewey' className='mr-3'>
                 <i className='fab fa-twitter'></i>
                 @ClaytonDewey
