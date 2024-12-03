@@ -63,13 +63,14 @@
 
 #portfolio {
   .flex {
+    gap: 2rem;
     justify-content: center;
   }
 }
 
 .project {
-  padding: 2rem;
   display: flex;
+  align-items: stretch;
   flex-direction: column;
   position: relative;
   flex: 1 1 100%;
@@ -136,11 +137,11 @@
   }
 
   @media #{$mq-small} {
-    flex: 0 0 50%;
+    flex: 0 0 48%;
   }
 
   @media #{$mq-medium} {
-    flex: 0 0 33.333%;
+    flex: 0 0 30%;
   }
 }
 
