@@ -43,7 +43,7 @@ const About = ({ Link }) => {
                 Get In Touch
               </Link>
               <a
-                href='./files/resume.pdf'
+                href='./files/Dewey.docx'
                 target='_blank'
                 className='btn btn__primary'>
                 Download My Resume
@@ -71,7 +71,7 @@ const About = ({ Link }) => {
                 Mastodon
               </a>
               <a href='https://mastodon.social/@ClaytonDewey' className='mr-3'>
-                <i class='fa-brands fa-mastodon'></i>
+                <i className='fa-brands fa-mastodon'></i>
                 @ClaytonDewey
               </a>
             </li>
