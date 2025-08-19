@@ -1,10 +1,13 @@
+@use '../util' as *;
+@use '../util' as *;
+
 #about,
 #portfolio,
 #services,
 #contact {
   padding: 10rem 1rem 10rem;
 
-  @media #{$mq-medium} {
+  @include breakpoint(medium) {
     padding: 5rem 5rem 8rem;
   }
 }
@@ -15,7 +18,7 @@
     max-width: 100%;
     display: block;
     margin: auto;
-    border: 1px solid $clr-secondary;
+    border: 1px solid var(--clr-secondary);
     border-radius: 4px;
     padding: 1rem;
   }
@@ -34,7 +37,7 @@
 
         a {
           display: inline-block;
-          font-family: $ff-mono;
+          font-family: var(--ff-mono);
 
           svg {
             margin-right: 1rem;
@@ -44,7 +47,7 @@
     }
   }
 
-  @media #{$mq-medium} {
+  @include breakpoint(medium) {
     article {
       ul {
         li {
@@ -74,10 +77,10 @@
   flex-direction: column;
   position: relative;
   flex: 1 1 100%;
-  font-family: $ff-sans;
+  font-family: var(--ff-sans);
 
   &__body {
-    background: $clr-darker-primary;
+    background: var(--clr-darker-primary);
     padding: 2rem;
 
     &:hover {
@@ -96,7 +99,7 @@
       display: block;
       max-width: 75%;
       height: auto;
-      margin: 3rem auto;
+      margin: rem(30) auto;
     }
   }
 
@@ -108,17 +111,17 @@
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    top: 2rem;
-    left: 2rem;
-    bottom: 2rem;
-    right: 2rem;
-    padding: 2rem;
-    background: darken($clr-darker-primary, 5%);
+    top: rem(20);
+    left: rem(20);
+    bottom: rem(20);
+    right: rem(20);
+    padding: rem(20);
+    background: darken(#082540, 5%);
     transition: all 0.45s ease-in-out;
 
     a {
       display: inline-block;
-      margin-bottom: 1rem;
+      margin-bottom: rem(10);
     }
   }
 
@@ -129,26 +132,26 @@
       display: inline-block;
 
       &:not(:last-child) {
-        margin-right: 1.5rem;
-        font-family: $ff-mono;
-        letter-spacing: 1.5px;
+        margin-right: rem(15);
+        font-family: var(--ff-mono);
+        letter-spacing: rem(1.5);
       }
     }
   }
 
-  @media #{$mq-small} {
+  @include breakpoint(small) {
     flex: 0 0 48%;
   }
 
-  @media #{$mq-medium} {
+  @include breakpoint(medium) {
     flex: 0 0 30%;
   }
 }
 
 #contact {
-  padding: 10rem auto;
+  padding: rem(100) auto;
 
   .btn {
-    margin: 10rem auto;
+    margin: rem(100) auto;
   }
 }

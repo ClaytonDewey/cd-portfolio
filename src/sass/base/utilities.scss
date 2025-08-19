@@ -1,3 +1,5 @@
+@use '../util' as *;
+
 // BOOTSTRAP PADDING/MARGIN UTILITIES
 // Spacing
 //
@@ -5,7 +7,7 @@
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1rem !default;
+$spacer: rem(10) !default;
 $spacers: () !default;
 $spacers: map-merge(
   (

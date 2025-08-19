@@ -1,0 +1,92 @@
+@use '../util' as *;
+
+.btn {
+  display: inline-block;
+  padding: rem(10) rem(15);
+  font-family: var(--ff-mono);
+  font-size: var(--fs-sm);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: rem(2) solid transparent;
+  border-radius: rem(5);
+  background-color: transparent;
+  color: inherit;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &__primary {
+    border-color: var(--clr-primary);
+    color: var(--clr-primary);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--clr-primary);
+      color: var(--clr-white);
+    }
+  }
+
+  &__secondary {
+    border-color: var(--clr-secondary);
+    color: var(--clr-secondary);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--clr-secondary);
+      border-color: var(--clr-secondary);
+      color: var(--clr-white);
+    }
+  }
+
+  &__cancel {
+    border-color: var(--clr-warningy);
+    color: var(--clr-warningy);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--clr-warningy);
+      border-color: var(--clr-warningy);
+      color: var(--clr-white);
+    }
+  }
+
+  svg {
+    margin-left: rem(10);
+    height: rem(15);
+    width: rem(15);
+  }
+}
+
+.goTopHidden {
+  display: none;
+}
+
+.goTop {
+  display: block;
+
+  z-index: 100;
+  position: fixed;
+  background: var(--clr-primary);
+  box-shadow: rem(2) rem(2) rem(5) var(--clr-secondary);
+  width: rem(50);
+  height: rem(50);
+  border: rem(1) solid var(--clr-secondary);
+  border-radius: rem(25);
+  bottom: rem(25);
+  right: rem(25);
+  cursor: pointer;
+  text-align: center;
+  line-height: rem(50);
+  transition: transform 0.25s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

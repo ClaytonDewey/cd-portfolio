@@ -1,0 +1,39 @@
+@use '../util' as *;
+
+// Root variables
+// https://www.schemecolor.com/dark-sea.php
+:root {
+  --ff-sans: 'Red Hat Display', sans-serif;
+  --ff-mono: 'Red Hat Mono', 'Robot Mono', monospace;
+
+  --clr-primary: #46a6b9;
+  --clr-dark-primary: #023c4d;
+  --clr-darker-primary: #082540;
+  --clr-darkest-primary: #071932;
+
+  --clr-secondary: #167979;
+  --clr-dark-secondary: #0d4848;
+  --clr-darkest-secondary: #032d39;
+
+  --clr-warning: #b95946;
+  --clr-white: #f1f1f1;
+  --clr-black: #333;
+
+  --clr-gray: #d4d4cf;
+  --clr-dark-gray: #a7afb1;
+  --clr-darkest-gray: #8d9497;
+  --clr-blue-gray: #6d8190;
+
+  --fs-xxs: rem(12);
+  --fs-xs: rem(13);
+  --fs-sm: rem(14);
+  --fs-md: rem(16);
+  --fs-lg: rem(18);
+  --fs-lg: rem(20);
+  --fs-xxl: rem(22);
+  --fs-heading: rem(60);
+
+  --fw-bold: 700;
+  --fw-regular: 400;
+  --fw-light: 300;
+}

@@ -1,0 +1,10 @@
+@use '../util' as *;
+
+footer {
+  text-align: center;
+  font-family: var(--ff-mono);
+  font-size: var(--fs-sm);
+  width: 100%;
+  padding: rem(20);
+  color: var(--clr-primary);
+}

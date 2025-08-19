@@ -1,46 +1,48 @@
+@use '../util' as *;
+
 .nav {
   &__toggler {
     position: absolute;
     cursor: pointer;
-    left: 1rem;
-    top: 5px;
-    font-size: 2rem;
+    left: rem(10);
+    top: rem(5);
+    font-size: rem(20);
     line-height: 1;
     background-color: transparent;
     border: none;
     z-index: 200;
-    padding: 1.5rem;
+    padding: rem(15);
     -webkit-appearance: button;
     transition: all 0.3s ease;
 
     .icon {
       &__bar {
-        background-color: $clr-white;
+        background-color: var(--clr-white);
         display: block;
-        width: 2.2rem;
-        height: 2px;
-        border-radius: 1px;
-        transform: rotate(0deg) translate(0px, 0px);
+        width: rem(22);
+        height: rem(2);
+        border-radius: rem(1);
+        transform: rotate(0deg) translate(0, 0);
         transition: all 0.3s ease;
 
         &:nth-child(2) {
           opacity: 1;
-          width: 1.6rem;
+          width: rem(16);
           margin-right: auto;
         }
 
         + .icon__bar {
-          margin-top: 4px;
+          margin-top: rem(4);
         }
       }
     }
 
     &:hover {
-      // background-color: lighten($clr-dark-primary, 5%);
+      // background-color: lighten(var(--clr-dark-primary), 5%);
       .icon {
         &__bar {
           &:nth-child(2) {
-            width: 2.2rem;
+            width: rem(22);
           }
         }
       }
@@ -53,7 +55,7 @@
     left: 0;
     right: 0;
     z-index: 100;
-    height: 5rem;
+    height: rem(50);
 
     ul {
       display: none;
@@ -65,36 +67,36 @@
         display: inline-block;
 
         &:not(:last-child) {
-          margin-right: 1.5rem;
+          margin-right: rem(15);
         }
 
         a {
           display: inline-block;
-          padding: 1.5rem;
+          padding: rem(15);
           text-decoration: none;
-          color: $clr-white;
-          font-family: $ff-mono;
+          color: var(--clr-white);
+          font-family: var(--ff-mono);
           cursor: pointer;
 
           &.active {
-            color: $clr-primary;
-            border-bottom: 2px solid $clr-primary;
+            color: var(--clr-primary);
+            border-bottom: rem(2) solid var(--clr-primary);
           }
         }
       }
     }
 
     &.bg-dark {
-      background: $clr-darker-primary;
-      border-bottom: 1px solid $clr-dark-primary;
+      background: var(--clr-darker-primary);
+      border-bottom: rem(1) solid var(--clr-dark-primary);
     }
 
     &.open {
       ul {
         display: block;
-        background: $clr-darker-primary;
-        padding-top: 5rem;
-        border-bottom: 1px solid $clr-secondary;
+        background: var(--clr-darker-primary);
+        padding-top: rem(50);
+        border-bottom: rem(1) solid var(--clr-secondary);
 
         li {
           display: block;
@@ -103,7 +105,7 @@
       .icon {
         &__bar {
           &:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 4px);
+            transform: rotate(45deg) translate(rem(5), rem(4));
           }
 
           &:nth-child(2) {
@@ -111,14 +113,14 @@
           }
 
           &:nth-child(3) {
-            transform: rotate(-45deg) translate(4px, -4px);
+            transform: rotate(-45deg) translate(rem(4), rem(-4));
           }
         }
       }
     }
   }
 
-  @media #{$mq-small} {
+  @include breakpoint(small) {
     &__toggler {
       display: none;
     }

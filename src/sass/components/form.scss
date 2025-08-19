@@ -1,40 +1,42 @@
+@use '../util' as *;
+
 .form {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  max-width: 80rem;
+  max-width: rem(800);
   margin: 0 auto;
 
   &__item {
     flex: 1 1 100%;
-    padding: 1rem 1.5rem;
-    margin-bottom: 3rem;
+    padding: rem(10) rem(15);
+    margin-bottom: rem(30);
     position: relative;
 
     label {
       position: absolute;
-      top: -2rem;
-      left: 1.5rem;
-      color: $clr-primary;
+      top: rem(-20);
+      left: rem(15);
+      color: var(--clr-primary);
       // transform: translateY(-35px);
       display: inline-block;
-      font-size: 18px;
+      font-size: var(--fs-lg);
     }
 
     input,
     textarea {
-      color: $clr-white;
-      font-family: $ff-mono;
+      color: var(--clr-white);
+      font-family: var(--ff-mono);
       background: transparent;
       border: none;
-      padding: 1.5rem 0;
+      padding: rem(15) 0;
       width: 100%;
-      border-bottom: 2px solid $clr-primary;
+      border-bottom: rem(2) solid var(--clr-primary);
       position: relative;
       z-index: 2;
     }
 
-    @media #{$mq-small} {
+    @include breakpoint(small) {
       &-half {
         flex: 1 1 50%;
       }
@@ -42,7 +44,7 @@
   }
 
   &__button {
-    padding: 0 1.5rem;
+    padding: 0 rem(15);
     width: 100%;
 
     button {
@@ -50,7 +52,7 @@
       width: 100%;
     }
 
-    @media #{$mq-small} {
+    @include breakpoint(small) {
       width: auto;
 
       button {

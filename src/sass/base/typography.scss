@@ -1,22 +1,22 @@
+@use '../util' as *;
+
 html {
-  // This defines what 1rem is.
-  font-size: 62.5%; // 1rem = 10px;
   font-style: normal;
   font-weight: normal;
 }
 
 body {
-  font-family: $ff-mono;
-  font-size: $fs-md;
+  font-family: var(--ff-mono);
+  font-size: var(--fs-md);
 }
 
 a {
-  color: $clr-primary;
+  color: var(--clr-primary);
 }
 
 p {
   line-height: 1.5;
-  margin-bottom: 1.5rem;
+  margin-bottom: rem(15);
 }
 
 article {
@@ -28,10 +28,10 @@ article {
   &__title {
     display: inline-block;
     width: auto;
-    padding-bottom: 2rem;
-    margin-bottom: 3rem;
-    margin-left: 2rem;
-    border-bottom: 5px solid $clr-secondary;
+    padding-bottom: rem(20);
+    margin-bottom: rem(30);
+    margin-left: rem(20);
+    border-bottom: rem(5) solid var(--clr-secondary);
 
     span {
       font-size: 60%;

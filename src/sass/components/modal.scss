@@ -1,3 +1,5 @@
+@use '../util' as *;
+
 .modal {
   &__bg {
     background: rgba(0, 0, 0, 0.7);
@@ -17,55 +19,55 @@
   }
 
   &__body {
-    background: $clr-darker-primary;
-    color: $clr-white;
+    background: var(--clr-darker-primary);
+    color: var(--clr-white);
     width: 95%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-radius: rem(5);
+    box-shadow: 0 0 rem(10) rgba(255, 255, 255, 0.2);
   }
 
   &__header {
-    padding: 2rem;
-    font-family: $ff-sans;
+    padding: rem(20);
+    font-family: var(--ff-sans);
     font-weight: 700;
-    font-size: $fs-xxl;
-    border-bottom: 1px solid $clr-gray;
+    font-size: var(--fs-xxl);
+    border-bottom: rem(1) solid var(--clr-gray);
   }
 
   &__content {
-    padding: 2rem;
+    padding: rem(20);
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    font-size: $fs-md;
+    gap: rem(30);
+    font-size: var(--fs-md);
 
     &-img {
       img {
         max-width: 100%;
         display: block;
         margin: 0 auto;
-        border-radius: 5px;
+        border-radius: rem(5);
       }
     }
 
     h3 {
-      margin-bottom: 1rem;
+      margin-bottom: rem(10);
     }
 
     p {
-      margin-bottom: 1rem;
+      margin-bottom: rem(10);
     }
 
     .btn {
-      margin-block: 2rem;
+      margin-block: rem(20);
     }
   }
 
   &__actions {
-    padding: 2rem;
-    border-top: 1px solid $clr-gray;
+    padding: rem(20);
+    border-top: rem(1) solid var(--clr-gray);
     display: flex;
-    gap: 2rem;
+    gap: rem(20);
     justify-content: flex-end;
     width: auto;
 
@@ -74,13 +76,13 @@
     }
   }
 
-  @media #{$mq-small} {
+  @include breakpoint(small) {
     &__body {
       width: 85%;
     }
 
     &__content {
-      padding-block: 5rem;
+      padding-block: rem(50);
       flex-direction: row;
 
       .btn {
@@ -97,7 +99,7 @@
     }
   }
 
-  @media #{$mq-medium} {
+  @include breakpoint(medium) {
     &__body {
       width: 55%;
     }

@@ -1,3 +1,5 @@
+@use '../util' as *;
+
 *,
 *::after,
 *::before {
@@ -8,11 +10,11 @@
 
 html,
 body {
-  margin: 0px auto;
+  margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
-  background: $clr-darkest-primary;
-  color: $clr-white;
+  background: var(--clr-darkest-primary);
+  color: var(--clr-white);
   // scroll-behavior: smooth;
 }
 
@@ -25,9 +27,9 @@ body {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
-  height: 1px;
+  height: rem(1);
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-  width: 1px;
+  width: rem(1);
 }

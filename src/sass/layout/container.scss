@@ -1,7 +1,9 @@
+@use '../util' as *;
+
 .container {
   width: 100%;
-  max-width: 142rem;
-  margin: 0 auto 2rem;
+  max-width: rem(1420);
+  margin: 0 auto rem(20);
 }
 
 .content {
@@ -9,7 +11,7 @@
   flex-flow: column nowrap;
   justify-content: center;
 
-  @media #{$mq-medium} {
+  @include breakpoint(medium) {
     flex-flow: row wrap;
     &__left {
       &-40 {

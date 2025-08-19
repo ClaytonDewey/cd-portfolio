@@ -1,9 +1,11 @@
+@use '../util' as *;
+
 .header {
   &__index {
     height: 100vh;
     position: relative;
-    background-color: $clr-black;
-    color: $clr-white;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
     background-image: url(../../../public/img/header-splash.jpg);
     background-size: cover;
     background-position: top center;
@@ -22,8 +24,8 @@
 
   &__image {
     &-profile {
-      height: 20rem;
-      width: 20rem;
+      height: rem(200);
+      width: rem(200);
       border-radius: 100%;
       display: block;
       margin: auto;
@@ -36,39 +38,39 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: $ff-sans;
+  font-family: var(--ff-sans);
 
   h1 {
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 4rem;
-    margin: 3rem auto 1rem;
-    color: $clr-primary;
+    letter-spacing: rem(3);
+    font-size: rem(40);
+    margin: rem(30) auto rem(10);
+    color: var(--clr-primary);
   }
 
   .subhead {
-    letter-spacing: 3px;
+    letter-spacing: rem(3);
     font-weight: 300;
-    margin-bottom: 1.5rem;
+    margin-bottom: rem(15);
   }
 }
 
 .fa-jedi-order,
 .fa-galactic-republic {
-  font-size: 5rem;
-  color: $clr-primary;
+  font-size: rem(50);
+  color: var(--clr-primary);
 }
 
 a.scroll-down {
   color: white;
   content: '';
-  width: 90px;
-  height: 32px;
+  width: rem(90);
+  height: rem(32);
   background-repeat: no-repeat;
   background-image: url(../../../public/img/down-arrow.png);
   position: absolute;
   display: block;
-  bottom: 3rem;
+  bottom: rem(30);
   z-index: 1;
   position: absolute;
   left: 50%;
@@ -79,8 +81,8 @@ a.scroll-down {
 .skipLink {
   position: absolute;
   left: -1000px;
-  color: white;
-  background-color: black;
+  color: var(--clr-white);
+  background-color: var(--clr-black);
 }
 
 .skipLink:focus,
