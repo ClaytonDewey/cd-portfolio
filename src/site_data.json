@@ -66,11 +66,11 @@
     {
       "id": 8,
       "title": "Random Password Generator",
-      "type": "Udemy Angular Tutorial",
+      "type": "Frontend Mentor Challenge",
       "image": "pwApp/pwApp-comp.png",
-      "external": "https://pw-nine-tau.vercel.app",
-      "tools": ["Angular", "TypeScript"],
-      "description": "Udemy Angular tutorial, that I then expanded on to add additional features."
+      "external": "https://claytondewey.github.io/react-password-generator/",
+      "tools": ["React", "CSS/Sass"],
+      "description": "A Frontend Mentor challenge"
     },
     {
       "id": 9,
