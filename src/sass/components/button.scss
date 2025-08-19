@@ -45,14 +45,14 @@
   }
 
   &__cancel {
-    border-color: var(--clr-warningy);
-    color: var(--clr-warningy);
+    border-color: var(--clr-warning);
+    color: var(--clr-warning);
 
     &:hover,
     &:active,
     &:focus {
-      background-color: var(--clr-warningy);
-      border-color: var(--clr-warningy);
+      background-color: var(--clr-warning);
+      border-color: var(--clr-warning);
       color: var(--clr-white);
     }
   }
