@@ -4,11 +4,11 @@
   &__index {
     height: 100vh;
     position: relative;
-    background-color: var(--clr-black);
-    color: var(--clr-white);
-    background-image: url(../../../public/img/header-splash.jpg);
-    background-size: cover;
-    background-position: top center;
+    // background-color: var(--background);
+    // color: var(--text);
+    // background-image: url(../../../public/img/header-splash.jpg);
+    // background-size: cover;
+    // background-position: top center;
   }
 
   &__wrapper {
@@ -45,7 +45,7 @@
     letter-spacing: rem(3);
     font-size: rem(40);
     margin: rem(30) auto rem(10);
-    color: var(--clr-primary);
+    color: var(--primary);
   }
 
   .subhead {
@@ -58,7 +58,7 @@
 .fa-jedi-order,
 .fa-galactic-republic {
   font-size: rem(50);
-  color: var(--clr-primary);
+  color: var(--primary);
 }
 
 a.scroll-down {

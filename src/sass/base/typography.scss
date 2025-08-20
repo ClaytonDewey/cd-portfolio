@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  color: var(--clr-primary);
+  color: var(--primary);
 }
 
 p {
@@ -31,7 +31,7 @@ article {
     padding-bottom: rem(20);
     margin-bottom: rem(30);
     margin-left: rem(20);
-    border-bottom: rem(5) solid var(--clr-secondary);
+    border-bottom: rem(5) solid var(--secondary);
 
     span {
       font-size: 60%;

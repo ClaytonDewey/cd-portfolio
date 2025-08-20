@@ -17,7 +17,7 @@
       position: absolute;
       top: rem(-20);
       left: rem(15);
-      color: var(--clr-primary);
+      color: var(--primary);
       // transform: translateY(-35px);
       display: inline-block;
       font-size: var(--fs-lg);
@@ -31,7 +31,7 @@
       border: none;
       padding: rem(15) 0;
       width: 100%;
-      border-bottom: rem(2) solid var(--clr-primary);
+      border-bottom: rem(2) solid var(--primary);
       position: relative;
       z-index: 2;
     }

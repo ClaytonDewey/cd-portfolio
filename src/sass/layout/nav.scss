@@ -17,7 +17,7 @@
 
     .icon {
       &__bar {
-        background-color: var(--clr-white);
+        // background-color: var(--clr-white);
         display: block;
         width: rem(22);
         height: rem(2);
@@ -74,13 +74,13 @@
           display: inline-block;
           padding: rem(15);
           text-decoration: none;
-          color: var(--clr-white);
+          color: var(--text);
           font-family: var(--ff-mono);
           cursor: pointer;
 
           &.active {
-            color: var(--clr-primary);
-            border-bottom: rem(2) solid var(--clr-primary);
+            color: var(--primary);
+            border-bottom: rem(2) solid var(--primary);
           }
         }
       }
@@ -89,6 +89,7 @@
     &.bg-dark {
       background: var(--clr-darker-primary);
       border-bottom: rem(1) solid var(--clr-dark-primary);
+      color: var(--clr-white);
     }
 
     &.open {
@@ -96,7 +97,7 @@
         display: block;
         background: var(--clr-darker-primary);
         padding-top: rem(50);
-        border-bottom: rem(1) solid var(--clr-secondary);
+        border-bottom: rem(1) solid var(--secondary);
 
         li {
           display: block;

@@ -20,26 +20,26 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &__primary {
-    border-color: var(--clr-primary);
-    color: var(--clr-primary);
+    border-color: var(--primary);
+    color: var(--primary);
 
     &:hover,
     &:active,
     &:focus {
-      background-color: var(--clr-primary);
+      background-color: var(--primary);
       color: var(--clr-white);
     }
   }
 
   &__secondary {
-    border-color: var(--clr-secondary);
-    color: var(--clr-secondary);
+    border-color: var(--secondary);
+    color: var(--secondary);
 
     &:hover,
     &:active,
     &:focus {
-      background-color: var(--clr-secondary);
-      border-color: var(--clr-secondary);
+      background-color: var(--secondary);
+      border-color: var(--secondary);
       color: var(--clr-white);
     }
   }
@@ -73,11 +73,11 @@
 
   z-index: 100;
   position: fixed;
-  background: var(--clr-primary);
-  box-shadow: rem(2) rem(2) rem(5) var(--clr-secondary);
+  background: var(--primary);
+  box-shadow: rem(2) rem(2) rem(5) var(--secondary);
   width: rem(50);
   height: rem(50);
-  border: rem(1) solid var(--clr-secondary);
+  border: rem(1) solid var(--secondary);
   border-radius: rem(25);
   bottom: rem(25);
   right: rem(25);
@@ -88,5 +88,23 @@
 
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+.theme__container {
+  position: absolute;
+  right: rem(20);
+  top: rem(5);
+  z-index: 9999;
+
+  .btn {
+    background: transparent;
+    color: var(--text);
+
+    svg {
+      margin-left: 0;
+      height: rem(20);
+      width: rem(20);
+    }
   }
 }
